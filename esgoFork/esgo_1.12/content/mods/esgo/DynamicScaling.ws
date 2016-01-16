@@ -4,7 +4,7 @@ Copyright © CD Projekt RED 2015
 
 class DynamicScaling
 {	
-
+	// Modifications to default Value for better usability - Nolenthar - No need to init values to play
 	public var TierOneLowestLevel, TierOneHighestLevel : int;
 	public var TierTwoLowestLevel, TierTwoHighestLevel : int;
 	public var TierThreeLowestLevel, TierThreeHighestLevel : int;
