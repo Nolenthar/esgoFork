@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<UserConfig>
+    <Group id="SCOptionGen" displayName="Mods.esgo_ESGO.esgo_General">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_dynamicScaling">
+				<Entry varId="Scale"				value="1"	/>
+				<Entry varId="SCMode"				value="0"	/>
+				<Entry varId="BFix"					value="1"	/>
+				<Entry varId="DDamage"				value="1"	/>
+				<Entry varId="MonsLVL"				value="0"	/>
+				<Entry varId="LVLReq"				value="0"	/>
+				<Entry varId="LVLUse"				value="0"	/>
+			</Preset>
+			<Preset id="1" displayName="esgo_groupScaling">
+				<Entry varId="Scale"				value="1"	/>
+				<Entry varId="SCMode"				value="1"	/>
+				<Entry varId="BFix"					value="1"	/>
+				<Entry varId="DDamage"				value="1"	/>
+				<Entry varId="MonsLVL"				value="0"	/>
+				<Entry varId="LVLReq"				value="0"	/>
+				<Entry varId="LVLUse"				value="0"	/>
+			</Preset>
+			<Preset id="2" displayName="esgo_vanilla">
+				<Entry varId="Scale"				value="0"	/>
+				<Entry varId="SCMode"				value="0"	/>
+				<Entry varId="BFix"					value="1"	/>
+				<Entry varId="DDamage"				value="1"	/>
+				<Entry varId="MonsLVL"				value="1"	/>
+				<Entry varId="LVLReq"				value="1"	/>
+				<Entry varId="LVLUse"				value="0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="Scale" 		 	 displayName="esgo_scaling" 													displayType="TOGGLE"/>
+			<Var id="SCMode" 		 	 displayName="esgo_scalingMode" 												displayType="OPTIONS">
+              <OptionsArray>
+					<Option id="0" displayName="esgo_dynamicScaling">
+                        <Entry varId="SCMode" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="esgo_groupScaling">
+                        <Entry varId="SCMode" value="1"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="BFix" 		 	 	 displayName="esgo_bestiaryFix" 												displayType="TOGGLE"/>
+			<Var id="DDamage" 		 	 displayName="esgo_durabilityDamage" 											displayType="OPTIONS">
+              <OptionsArray>
+					<Option id="0" displayName="esgo_overhauled">
+                        <Entry varId="DDamage" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="esgo_Vanilla">
+                        <Entry varId="DDamage" value="1"/>
+                    </Option>
+                    <Option id="2" displayName="esgo_off">
+                        <Entry varId="DDamage" value="2"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="MonsLVL" 			 displayName="esgo_showLevel"												displayType="TOGGLE"/>
+			<Var id="LVLReq" 		 	 displayName="esgo_gearLevelRequirement" 									displayType="TOGGLE"/>
+			<Var id="LVLUse" 		 	 displayName="esgo_MaxItemLevelDifference" 								displayType="SLIDER;0;50;50"/>
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionCM" displayName="Mods.esgo_ESGO.esgo_combat.esgo_combatControl">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo">
+				<Entry varId="Lockon"				value="0"	/>
+				<Entry varId="LockonM"				value="0"	/>
+				<Entry varId="Combatstate"			value="1"	/>
+				<Entry varId="CLockon"				value="1"	/>
+				<Entry varId="ASheathe"				value="0"	/>
+			</Preset>
+			<Preset id="1" displayName="esgo_Vanilla">
+				<Entry varId="Lockon"				value="1"	/>
+				<Entry varId="LockonM"				value="0"	/>
+				<Entry varId="Combatstate"			value="1"	/>
+				<Entry varId="CLockon"				value="1"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="Lockon" 		 	 	 displayName="esgo_LockOn" 									displayType="TOGGLE"/>
+			<Var id="LockonM" 		 	 	 displayName="esgo_targeting" 						displayType="OPTIONS">
+               <OptionsArray>
+					<Option id="0" displayName="esgo_cameraTargetting">
+                        <Entry varId="LockonM" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="esgo_movementTargeting">
+                        <Entry varId="LockonM" value="1"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="CLockon" 		 	 	 displayName="esgo_crossbowLock" 											displayType="TOGGLE"/>
+			<Var id="Combatstate" 		 	 displayName="esgo_combatStance" 											displayType="TOGGLE"/>
+			<Var id="ASheathe" 		 	 	 displayName="esgo_sheatheSword" 											displayType="TOGGLE"/>
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionCWh" displayName="Mods.esgo_ESGO.esgo_combat.esgo_abilities.esgo_whirlAndRend.esgo_Whirl">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo">
+				<Entry varId="WhSR"					value="0"	/>
+				<Entry varId="WhSU"					value="0.8"	/>
+				<Entry varId="WhAU"					value="1"	/>
+				<Entry varId="WhER"					value="0"	/>
+				<Entry varId="WhDM"					value="0.9"	/>
+			</Preset>
+			<Preset id="1" displayName="esgo_Vanilla">
+				<Entry varId="WhSR"					value="1"	/>
+				<Entry varId="WhSU"					value="1"	/>
+				<Entry varId="WhAU"					value="1"	/>
+				<Entry varId="WhER"					value="0"	/>
+				<Entry varId="WhDM"					value="1"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="WhSR" 		 	 	 	 displayName="esgo_whirlSkillRequirement" 						displayType="TOGGLE"		/>
+			<Var id="WhSU" 		 	 	 	 displayName="esgo_whirlStamina" 								displayType="SLIDER;0;5;25"	/>
+			<Var id="WhAU" 			 	 	 displayName="esgo_whirlAdrenaline"		 						displayType="SLIDER;0;5;25"	/>
+			<Var id="WhER"	 		 	 	 displayName="esgo_whirlRange" 									displayType="TOGGLE"		/>
+			<Var id="WhDM"	 		 	 	 displayName="esgo_whirlDamage" 								displayType="SLIDER;0;10;50"/>
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionRend" displayName="Mods.esgo_ESGO.esgo_combat.esgo_abilities.esgo_whirlAndRend.esgo_esgoRend">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo">
+				<Entry varId="ReSR"					value="0"	/>
+				<Entry varId="ReSU"					value="1"	/>
+				<Entry varId="ReAU"					value="2"	/>
+				<Entry varId="ReER"					value="0"	/>
+				<Entry varId="ReDM"					value="1"	/>
+				<Entry varId="ReDPA"				value="1"	/>
+				<Entry varId="ReDPS"				value="1"	/>
+			</Preset>
+			<Preset id="1" displayName="esgo_Vanilla">
+				<Entry varId="ReSR"					value="1"	/>
+				<Entry varId="ReSU"					value="1"	/>
+				<Entry varId="ReAU"					value="1"	/>
+				<Entry varId="ReER"					value="0"	/>
+				<Entry varId="ReDM"					value="1"	/>
+				<Entry varId="ReDPA"				value="1"	/>
+				<Entry varId="ReDPS"				value="1"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="ReSR" 		 	 	 	 displayName="esgo_whirlSkillRequirement" 						displayType="TOGGLE"			/>
+			<Var id="ReSU" 		 	 	 	 displayName="esgo_whirlStamina" 								displayType="SLIDER;0;5;25"		/>
+			<Var id="ReAU" 		 	 	 	 displayName="esgo_whirlAdrenaline" 							displayType="SLIDER;0;5;25"		/>
+			<Var id="ReER" 		 	 		 displayName="esgo_whirlRange" 									displayType="TOGGLE"			/>
+			<Var id="ReDM" 		 	 		 displayName="esgo_whirlDamage" 								displayType="SLIDER;0;10;50"	/>
+			<Var id="ReDPA" 		 	 	 displayName="esgo_adrenalineDamage"	 						displayType="SLIDER;0;10;50"	/>
+			<Var id="ReDPS" 		 	 	 displayName="esgo_staminaDamage"	 							displayType="SLIDER;0;10;50"	/>
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionCW" displayName="Mods.esgo_ESGO.esgo_combat.esgo_abilities.esgo_witcherRage">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo">
+				<Entry varId="ASC"					value="1"	/>
+				<Entry varId="ASCL"					value="1"	/>
+				<Entry varId="ASSD"					value="1"	/>
+				<Entry varId="FASC"					value="10"	/>
+				<Entry varId="SASC"					value="16"	/>
+				<Entry varId="EVSC"					value="8"	/>
+				<Entry varId="RDSC"					value="0.7"	/>
+				<Entry varId="RDSCH"				value="1.0"	/>
+				<Entry varId="RDSCD"				value="0.6"	/>
+				<Entry varId="ASFA"					value="0.03"/>
+				<Entry varId="ASHA"					value="0.10"/>
+				<Entry varId="ASAPF"				value="0.08"/>
+				<Entry varId="ASAPH"				value="0.16"/>
+				<Entry varId="LightIn"				value="0.05"/>
+				<Entry varId="HeavyDe"				value="0.04"/>
+				<Entry varId="ASDPS"				value="25"/>
+				<Entry varId="ASDPH"				value="30"/>
+				<Entry varId="ASDR"					value="0.07"/>
+				<Entry varId="ASFAN"				value="1.00"/>
+				<Entry varId="ASHAN"				value="1.00"/>
+				<Entry varId="ASDRN"				value="1.00"/>
+			</Preset>
+			<Preset id="1" displayName="esgo_Vanilla">
+				<Entry varId="ASC"					value="1"	/>
+				<Entry varId="ASCL"					value="1"	/>
+				<Entry varId="ASSD"					value="0"	/>
+				<Entry varId="FASC"					value="0"	/>
+				<Entry varId="SASC"					value="0"	/>
+				<Entry varId="EVSC"					value="0"	/>
+				<Entry varId="RDSC"					value="0"	/>
+				<Entry varId="RDSCH"				value="0"	/>
+				<Entry varId="RDSCD"				value="0"	/>
+				<Entry varId="ASFA"					value="0.03"/>
+				<Entry varId="ASHA"					value="0.10"/>
+				<Entry varId="ASAPF"				value="0.00"/>
+				<Entry varId="ASAPH"				value="0.00"/>
+				<Entry varId="LightIn"				value="0"	/>
+				<Entry varId="HeavyDe"				value="0"	/>
+				<Entry varId="ASDPS"				value="0"	/>
+				<Entry varId="ASDPH"				value="0"	/>
+				<Entry varId="ASDR"					value="0.07"/>
+				<Entry varId="ASFAN"				value="1.00"/>
+				<Entry varId="ASHAN"				value="1.00"/>
+				<Entry varId="ASDRN"				value="1.00"/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="ASC" 		 	 		 displayName="esgo_attackSpeedCapHigh" 											displayType="TOGGLE"/>
+			<Var id="ASCL" 		 	 		 displayName="esgo_attackSpeedCapLow" 											displayType="TOGGLE"/>
+			<Var id="ASSD" 		 	 		 displayName="esgo_attackSpeedSkillDependant" 									displayType="TOGGLE"					 />
+			<Var id="ASFA" 		 	 		 displayName="esgo_incrementPerSkillLevelFA" 									displayType="SLIDER;0.00;0.50;50" 		 />
+			<Var id="ASHA" 		 	 		 displayName="esgo_incrementPerSkillLevelSA" 									displayType="SLIDER;0.00;0.50;50" 		 />
+			<Var id="ASDR" 		 	 		 displayName="esgo_incrementPerSkillLevelDR" 									displayType="SLIDER;0.00;0.50;50" 		 />
+			<Var id="ASAPF" 		 	 	 displayName="esgo_incrementPerAdrenalinePointFA" 								displayType="SLIDER;0.00;0.50;50" 		 />
+			<Var id="ASAPH" 		 	 	 displayName="esgo_incrementPerAdrenalinePointSA"				 				displayType="SLIDER;0.00;0.50;50" 		 />
+			<Var id="LightIn" 		 	 	 displayName="esgo_incrementPerLightArmorPiece"					 				displayType="SLIDER;0.00;0.50;50" 		 />
+			<Var id="HeavyDe" 		 	 	 displayName="esgo_decrementPerHeavyArmorPiece"					 				displayType="SLIDER;0.00;0.50;50" 		 />
+			<Var id="FASC"	 		 	 	 displayName="esgo_staminaCostFastAttacks" 										displayType="SLIDER;0;100;100" 			 />
+			<Var id="SASC" 			 	 	 displayName="esgo_staminaCostHeavyAttacks"	 									displayType="SLIDER;0;100;100" 			 />
+			<Var id="EVSC" 		 	 		 displayName="esgo_staminaCostEvasion"							 				displayType="SLIDER;0;100;100"	 		 />
+			<Var id="RDSC" 		 	 		 displayName="esgo_staminaRegenDelayFA"										 	displayType="SLIDER;0;3;30"	 			 />
+			<Var id="RDSCH" 	 	 		 displayName="esgo_staminaRegenDelaySA"										 	displayType="SLIDER;0;3;30"	 			 />
+			<Var id="RDSCD" 	 	 		 displayName="esgo_staminaRegenDelayEvasion"								 	displayType="SLIDER;0;3;30"	 			 />
+			<Var id="ASDPS" 		 	 	 displayName="esgo_speedMalusMaxReductionS"							 			displayType="SLIDER;0;100;100" 			 />
+			<Var id="ASDPH" 		 	 	 displayName="esgo_speedMalusMaxReductionH"						 				displayType="SLIDER;0;100;100" 			 />
+			<Var id="ASFAN" 		 	 	 displayName="esgo_speedMultiplierNSFA"								 			displayType="SLIDER;0.0;10;100" 		 />
+			<Var id="ASHAN" 		 	 	 displayName="esgo_speedMultiplierNSSA"								 			displayType="SLIDER;0.0;10;100" 		 />
+			<Var id="ASDRN" 		 	 	 displayName="esgo_speedMultiplierNSDR"								 			displayType="SLIDER;0.0;10;100" 		 />
+
+		</VisibleVars>
+    </Group>
+			
+    <Group id="SCOptionCR" displayName="Mods.esgo_ESGO.esgo_combat.esgo_abilities.esgo_esgoButcher">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo">
+				<Entry varId="Dism"					value="100"	/>
+				<Entry varId="Finish"				value="60"	/>
+				<Entry varId="RSAct"				value="1"	/>
+				<Entry varId="RSHABB"				value="1"	/>
+				<Entry varId="RSFV"					value="1"	/>
+				<Entry varId="RSAF"					value="0"	/>
+				<Entry varId="RSAGF"				value="0.7"	/>
+				<Entry varId="RSAGD"				value="0"	/>
+			</Preset>
+			<Preset id="1" displayName="esgo_Vanilla" >
+				<Entry varId="Dism"					value="30"	/>
+				<Entry varId="Finish"				value="30"	/>
+				<Entry varId="RSHABB"				value="0"	/>
+				<Entry varId="RSAct"				value="0"	/>
+				<Entry varId="RSFV"					value="1"	/>
+				<Entry varId="RSAF"					value="0"	/>
+				<Entry varId="RSAGF"				value="0.7"	/>
+				<Entry varId="RSAGD"				value="0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="RSAct" 		 	 	 displayName="esgo_butcher" 													displayType="TOGGLE" 					 />
+			<Var id="RSHABB" 		 	 	 displayName="esgo_butcherLowStamina"								 			displayType="TOGGLE" 					 />
+			<Var id="RSFV" 		 	 	 	 displayName="esgo_butcherFV"													displayType="TOGGLE" 					 />
+			<Var id="RSAF" 		 	 		 displayName="esgo_butcherAF"							 						displayType="TOGGLE" 					 />
+			<Var id="Finish" 		 	 	 displayName="esgo_esgo_butcherFC"					 								displayType="SLIDER;0;100;100" 			 />
+			<Var id="RSAGF" 		 	 	 displayName="esgo_esgo_butcherFAG" 													displayType="SLIDER;0.0;3.0;30" 		 />
+			<Var id="Dism" 		 	 		 displayName="esgo_esgo_butcherDC" 													displayType="SLIDER;0;100;100" 			 />
+			<Var id="RSAGD" 		 	 	 displayName="esgo_esgo_butcherAG"							 						displayType="SLIDER;0.0;3.0;30" 		 />
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionCP" displayName="Mods.esgo_ESGO.esgo_combat.esgo_abilities.esgo_defender">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo" >
+				<Entry varId="PCheck"				value="0"	/>
+				<Entry varId="PCheckS"				value="0"	/>
+				<Entry varId="PCheckA"				value="1"	/>
+				<Entry varId="CCheck"				value="1"	/>
+				<Entry varId="CCheckA"				value="0"	/>
+				<Entry varId="CADRG"				value="1"	/>
+				<Entry varId="CADRGA"				value="0.3"	/>
+				<Entry varId="CTH"					value="0"	/>
+				<Entry varId="CTHH"					value="1"	/>
+				<Entry varId="CTHSH"				value="2"	/>
+				<Entry varId="CTM"					value="0"	/>
+				<Entry varId="CTMH"					value="2"	/>
+				<Entry varId="FFNS"					value="1"	/>
+				<Entry varId="FFL"					value="1"	/>
+				<Entry varId="KAT"					value="1"	/>
+				<Entry varId="KST"					value="75"	/>
+				<Entry varId="KHT"					value="60"	/>
+				<Entry varId="BleedDam"				value="35"	/>
+				<Entry varId="BleedDur"				value="3"	/>
+				<Entry varId="DisarmSH"				value="1"	/>
+				<Entry varId="StamDam"				value="25"	/>
+				<Entry varId="StamDur"				value="4"	/>
+			</Preset>
+			<Preset id="1" displayName="esgo_Vanilla" >
+				<Entry varId="PCheck"				value="0"	/>
+				<Entry varId="PCheckS"				value="0"	/>
+				<Entry varId="PCheckA"				value="0"	/>
+				<Entry varId="CCheck"				value="0"	/>
+				<Entry varId="CCheckA"				value="0"	/>
+				<Entry varId="CADRG"				value="0"	/>
+				<Entry varId="CADRGA"				value="0.3"	/>
+				<Entry varId="CTH"					value="1"	/>
+				<Entry varId="CTHH"					value="2"	/>
+				<Entry varId="CTHSH"				value="2"	/>
+				<Entry varId="CTM"					value="0"	/>
+				<Entry varId="CTMH"					value="0"	/>
+				<Entry varId="FFNS"					value="0"	/>
+				<Entry varId="FFL"					value="1"	/>
+				<Entry varId="KAT"					value="1"	/>
+				<Entry varId="KST"					value="0"	/>
+				<Entry varId="KHT"					value="100"	/>
+				<Entry varId="BleedDam"				value="0"	/>
+				<Entry varId="BleedDur"				value="0"	/>
+				<Entry varId="DisarmSH"				value="0"	/>
+				<Entry varId="StamDam"				value="0"	/>
+				<Entry varId="StamDur"				value="0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>	
+			<Var id="PCheck" 		 	 displayName="option_esgo_parryHA" 										displayType="TOGGLE"					 />
+			<Var id="PCheckS" 		 	 displayName="option_esgo_parryHAS" 								displayType="TOGGLE"					 />
+			<Var id="PCheckA" 		 	 displayName="option_esgo_parryAWS" 								displayType="TOGGLE"					 />
+			<Var id="CCheck" 		 	 displayName="option_esgo_counterCHA" 										displayType="TOGGLE"					 />
+			<Var id="CCheckA" 		 	 displayName="option_esgo_counterCAWS" 								displayType="TOGGLE"					 />
+			<Var id="CADRG" 		 	 displayName="option_esgo_counterCAG" 									displayType="TOGGLE"					 />
+			<Var id="CADRGA" 		 	 displayName="option_esgo_counterCAMG" 										displayType="SLIDER;0.0;3.0;30"			 />
+			<Var id="CTH" 		 	 	 displayName="option_esgo_counterHumanA" 										displayType="OPTIONS"					 >
+				<OptionsArray>
+					<Option id="0" displayName="esgo_CTSwordCounter">
+                        <Entry varId="CTH" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="esgo_CTKickCounter">
+                        <Entry varId="CTH" value="1"/>
+                    </Option>
+                    <Option id="2" displayName="esgo_CTBashCounter">
+                        <Entry varId="CTH" value="2"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="CTHH" 		 	 	displayName="option_esgo_counterHumanHA" 								displayType="OPTIONS"					 >
+              <OptionsArray>
+					<Option id="0" displayName="esgo_CTSwordCounter">
+                        <Entry varId="CTHH" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="esgo_CTKickCounter">
+                        <Entry varId="CTHH" value="1"/>
+                    </Option>
+                    <Option id="2" displayName="esgo_CTBashCounter">
+                        <Entry varId="CTHH" value="2"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="CTHSH" 		 	 	displayName="option_esgo_counterHumanHA2H" 				displayType="OPTIONS"					 >
+              <OptionsArray>
+					<Option id="0" displayName="esgo_CTSwordCounter">
+                        <Entry varId="CTHSH" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="esgo_CTKickCounter">
+                        <Entry varId="CTHSH" value="1"/>
+                    </Option>
+                    <Option id="2" displayName="esgo_CTBashCounter">
+                        <Entry varId="CTHSH" value="2"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="CTM" 		 	 	 displayName="option_esgo_counterMA" 									displayType="OPTIONS"					 >
+              <OptionsArray>
+					<Option id="0" displayName="esgo_CTSwordCounter">
+                        <Entry varId="CTM" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="esgo_CTKickCounter">
+                        <Entry varId="CTM" value="1"/>
+                    </Option>
+					<Option id="2" displayName="esgo_CTBashCounter">
+                        <Entry varId="CTM" value="2"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="CTMH" 		 	 	displayName="option_esgo_counterMHA" 								displayType="OPTIONS"					 >
+              <OptionsArray>
+					<Option id="0" displayName="esgo_CTSwordCounter">
+                        <Entry varId="CTMH" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="esgo_CTKickCounter">
+                        <Entry varId="CTMH" value="1"/>
+                    </Option>
+                    <Option id="2" displayName="esgo_CTBashCounter">
+                        <Entry varId="CTMH" value="2"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="BleedDam" 			 displayName="option_esgo_SCBDPS"							 				displayType="SLIDER;0;150;150"			 />
+			<Var id="BleedDur" 			 displayName="option_esgo_SCBDuPS"							 				displayType="SLIDER;0;15;15"			 />
+			<Var id="DisarmSH" 			 displayName="option_esgo_SCChanceD"					 					displayType="TOGGLE"					 />
+			<Var id="StamDam" 			 displayName="option_esgo_KCSDPSL" 											displayType="SLIDER;0;150;150"			 />
+			<Var id="StamDur" 			 displayName="option_esgo_KCSRD" 											displayType="SLIDER;0;10;100"			 />
+			<Var id="KAT" 		 	 	 displayName="option_esgo_BCPAT" 											displayType="SLIDER;0;6;6"				 />
+			<Var id="KST" 		 	 	 displayName="option_esgo_BCPST" 											displayType="SLIDER;0;100;100"			 />
+			<Var id="KHT" 		 	 	 displayName="option_esgo_BCEHT" 											displayType="SLIDER;0;100;100"			 /> 
+			<Var id="FFNS" 		 		 displayName="option_esgo_DNFFS" 											displayType="TOGGLE"					 />
+			<Var id="FFL" 		 		 displayName="option_esgo_NFFSL" 											displayType="SLIDER;1;5;4"				 />
+
+		</VisibleVars>
+    </Group>
+					
+    <Group id="SCOptionCA" displayName="Mods.esgo_ESGO.esgo_combat.esgo_abilities.esgoAdrenalineControl">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo" >
+				<Entry varId="ADRP"					value="3"	/>
+				<Entry varId="ADRGenH"				value="0.5"	/>
+				<Entry varId="ADRGenR"				value="0.5"	/>
+				<Entry varId="ADRGenB"				value="0.5"	/>
+				<Entry varId="ADRGenS"				value="0.6"	/>
+				<Entry varId="ADRDeg"				value="1.2"	/>
+				<Entry varId="ADRDegC"				value="0.7"	/>
+				<Entry varId="ADRDegMV"				value="2.5"	/>
+				<Entry varId="ADRDegMVC"			value="3"	/>
+				<Entry varId="ADRDegH"				value="1.7"	/>
+				<Entry varId="ADRDegHH"				value="2.3"	/>
+				<Entry varId="ADRDegHSH"			value="3.2"	/>
+				<Entry varId="CADRDeg"				value="1"	/>
+			</Preset>
+			<Preset id="1" displayName="esgo_Vanilla" >
+				<Entry varId="ADRP"					value="3"	/>
+				<Entry varId="ADRGenH"				value="1"	/>
+				<Entry varId="ADRGenR"				value="1"	/>
+				<Entry varId="ADRGenB"				value="1"	/>
+				<Entry varId="ADRGenS"				value="1"	/>
+				<Entry varId="ADRDeg"				value="1"	/>
+				<Entry varId="ADRDegC"				value="1"	/>
+				<Entry varId="ADRDegMV"				value="3"	/>
+				<Entry varId="ADRDegMVC"			value="3"	/>
+				<Entry varId="ADRDegH"				value="1"	/>
+				<Entry varId="ADRDegHH"				value="1"	/>
+				<Entry varId="ADRDegHSH"			value="1"	/>
+				<Entry varId="CADRDeg"				value="0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="ADRP" 		 	 	 	 displayName="esgo_MaxAdrenalinePoints" 							displayType="SLIDER;0;6.0;6" 			 />
+			<Var id="ADRGenH" 		 	 	 displayName="esgo_AdrGenerationMelee" 								displayType="SLIDER;0.0;10.0;100" 		 />
+			<Var id="ADRGenB" 		 	 	 displayName="esgo_AdrGenerationBombs" 								displayType="SLIDER;0.0;10.0;100" 		 />
+			<Var id="ADRGenS" 		 	 	 displayName="esgo_AdrGenerationSigns" 								displayType="SLIDER;0.0;10.0;100" 		 />
+			<Var id="ADRGenR" 		 	 	 displayName="esgo_AdrGenerationRanged" 							displayType="SLIDER;0.0;10.0;100" 		 />
+			<Var id="ADRDegH" 		 	 	 displayName="esgo_AdrLightHits"					 				displayType="SLIDER;0.0;10.0;100" 		 />
+			<Var id="ADRDegHH" 		 	 	 displayName="esgo_AdrHeavyHits"									displayType="SLIDER;0.0;10.0;100" 		 />
+			<Var id="ADRDegHSH" 	 	 	 displayName="esgo_AdrHeavyHitsS"						 			displayType="SLIDER;0.0;10.0;100" 		 />
+			<Var id="ADRDeg" 		 	 	 displayName="esgo_AdrNonCombat"								 	displayType="SLIDER;0.0;10.0;100" 		 />
+			<Var id="ADRDegC" 		 	 	 displayName="esgo_AdrTimeCombatS"							 		displayType="SLIDER;0.0;10.0;100" 		 />
+			<Var id="ADRDegMV" 		 	 	 displayName="esgo_MaxDrainCombatS"					 				displayType="SLIDER;0.0;6.0;60" 		 />
+			<Var id="ADRDegMVC" 		 	 displayName="esgo_MaxNonCombat" 									displayType="SLIDER;0.0;6.0;60" 		 />
+			<Var id="CADRDeg" 		 	 	 displayName="esgo_ComAdrenalineDegeneration" 						displayType="TOGGLE" 					 />
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionCE" displayName="Mods.esgo_ESGO.esgo_combat.esgo_enemies">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo" >
+				<Entry varId="EnAgg"					value="4"	/>
+				<Entry varId="LGCh"						value="2"	/>
+				<Entry varId="RGCh"						value="0.5"	/>
+				<Entry varId="CCh"						value="0.5"	/>
+				<Entry varId="CChPH"					value="1"	/>
+				<Entry varId="GChPH"					value="2"	/>
+				<Entry varId="HCCh"						value="2"	/>
+				<Entry varId="HGCh"						value="1"	/>
+				<Entry varId="EDND"						value="1"	/>
+				<Entry varId="EDDN"						value="35"	/>
+			</Preset>
+			<Preset id="1" displayName="esgo_Vanilla" >
+				<Entry varId="EnAgg"					value="3"	/>
+				<Entry varId="LGCh"						value="1"	/>
+				<Entry varId="RGCh"						value="1"	/>
+				<Entry varId="CCh"						value="1"	/>
+				<Entry varId="CChPH"					value="1"	/>
+				<Entry varId="GChPH"					value="1"	/>
+				<Entry varId="HCCh"						value="1"	/>
+				<Entry varId="HGCh"						value="1"	/>
+				<Entry varId="EDND"						value="1"	/>
+				<Entry varId="EDDN"						value="0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="EnAgg" 		 	 	displayName="esgo_enemyCombatAggressiveness" 							displayType="OPTIONS"					 >
+              <OptionsArray>
+					<Option id="0" displayName="esgoVeryLow">
+                        <Entry varId="EnAgg" value="0"/>
+                    </Option>
+					<Option id="1" displayName="esgoLower">
+                        <Entry varId="EnAgg" value="1"/>
+                    </Option>
+                    <Option id="2" displayName="esgoLow">
+                        <Entry varId="EnAgg" value="2"/>
+                    </Option>
+                    <Option id="3" displayName="esgoNormal">
+                        <Entry varId="EnAgg" value="3"/>
+                    </Option>
+                    <Option id="4" displayName="esgoHigh">
+                        <Entry varId="EnAgg" value="4"/>
+                    </Option>
+                    <Option id="5" displayName="esgoHigher">
+                        <Entry varId="EnAgg" value="5"/>
+                    </Option>
+                    <Option id="6" displayName="esgoVeryHigh">
+                        <Entry varId="EnAgg" value="6"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="LGCh" 			 displayName="esgo_chanceToLowGuard"						displayType="SLIDER;0;10;20" 	 />
+			<Var id="RGCh" 			 displayName="esgo_chanceToRaiseGuard"						displayType="SLIDER;0;10;20" 	 />
+			<Var id="CCh" 			 displayName="esgo_chanceToCounter"							displayType="SLIDER;0;10;20" 	 />
+			<Var id="CChPH" 		 displayName="esgo_counterChancePerHit"						displayType="SLIDER;0;10;20" 	 />
+			<Var id="GChPH" 		 displayName="esgo_blockChancePerHit"						displayType="SLIDER;0;10;20" 	 />
+			<Var id="HCCh" 			 displayName="esgo_hitsToCounter"								displayType="SLIDER;0;10;20" 	 />
+			<Var id="HGCh" 			 displayName="esgo_hitsToBlock"								displayType="SLIDER;0;10;20" 	 />
+			<Var id="EDND" 			 displayName="esgo_enemyDodgeNegate"								displayType="TOGGLE" 			 />
+			<Var id="EDDN" 			 displayName="esgo_enemyDodgeDamage"					displayType="SLIDER;0;100;100" 	 />
+
+			</VisibleVars>
+    </Group>
+				
+    <Group id="SCOptionLG" displayName="Mods.esgo_ESGO.esgoLevel.esgoLevelGroupScaling">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo" >
+				<Entry varId="GSL3"				value="-11"	/>
+				<Entry varId="GSL4"				value="-13"	/>
+				<Entry varId="GSL1"				value="-7"	/>
+				<Entry varId="GSL2"				value="-3"	/>
+				<Entry varId="GSN1"				value="-2"	/>
+				<Entry varId="GSN2"				value="2"	/>
+				<Entry varId="GSH1"				value="5"	/>
+				<Entry varId="GSH2"				value="7"	/>
+				<Entry varId="GSH3"				value="10"	/>
+				<Entry varId="GSH4"				value="15"	/>
+				<Entry varId="GSPE"				value="1"	/>
+				<Entry varId="GSHDC"			value="0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="GSL3" 			 displayName="GSFEMini"													displayType="SLIDER;-30;10;40" 			 />
+			<Var id="GSL4" 			 displayName="GSFEMax"													displayType="SLIDER;-10;10;20" 			 />
+			<Var id="GSL1" 			 displayName="GSWEMini"													displayType="SLIDER;-10;10;20" 			 />
+			<Var id="GSL2" 			 displayName="GSWEMaxi"													displayType="SLIDER;-10;10;20" 			 />
+			<Var id="GSN1" 			 displayName="GSNEMini"													displayType="SLIDER;-10;10;20" 			 />
+			<Var id="GSN2" 			 displayName="GSNEMaxi"													displayType="SLIDER;-10;10;20" 			 />
+			<Var id="GSH1" 			 displayName="GSSEMini"													displayType="SLIDER;-10;10;20" 			 />
+			<Var id="GSH2" 			 displayName="GSSEMaxi"													displayType="SLIDER;-10;10;20" 			 />
+			<Var id="GSH3" 			 displayName="GSHEMini"													displayType="SLIDER;-10;30;40" 			 />
+			<Var id="GSH4" 			 displayName="GSHEMaxi"													displayType="SLIDER;-10;30;40" 			 />
+			<Var id="GSPE" 			 displayName="FECategory"												displayType="TOGGLE" 					 />
+			<Var id="GSHDC" 		 displayName="hardcoreMode"												displayType="TOGGLE" 					 />
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionLH" displayName="Mods.esgo_ESGO.esgoLevel.esgoLevelDynamicScaling.esgoHumanAndBeastScaling">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo" >
+				<Entry varId="T1H1"				value="-1"	/>
+				<Entry varId="T1H2"				value="-1"	/>
+				<Entry varId="T2H1"				value="-1"	/>
+				<Entry varId="T2H2"				value="-2"	/>
+				<Entry varId="T3H1"				value="-2"	/>
+				<Entry varId="T3H2"				value="-3"	/>
+				<Entry varId="T4H1"				value="-2"	/>
+				<Entry varId="T4H2"				value="-3"	/>
+				<Entry varId="T5H1"				value="-3"	/>
+				<Entry varId="T5H2"				value="-3"	/>
+			</Preset>
+			<Preset id="1" displayName="esgoHard" >
+				<Entry varId="T1H1"				value="0"	/>
+				<Entry varId="T1H2"				value="2"	/>
+				<Entry varId="T2H1"				value="0"	/>
+				<Entry varId="T2H2"				value="3"	/>
+				<Entry varId="T3H1"				value="0"	/>
+				<Entry varId="T3H2"				value="4"	/>
+				<Entry varId="T4H1"				value="0"	/>
+				<Entry varId="T4H2"				value="5"	/>
+				<Entry varId="T5H1"				value="0"	/>
+				<Entry varId="T5H2"				value="6"	/>
+			</Preset>
+			<Preset id="2" displayName="esgoHardcore" >
+				<Entry varId="T1H1"				value="1"	/>
+				<Entry varId="T1H2"				value="4"	/>
+				<Entry varId="T2H1"				value="2"	/>
+				<Entry varId="T2H2"				value="5"	/>
+				<Entry varId="T3H1"				value="3"	/>
+				<Entry varId="T3H2"				value="6"	/>
+				<Entry varId="T4H1"				value="3"	/>
+				<Entry varId="T4H2"				value="8"	/>
+				<Entry varId="T5H1"				value="4"	/>
+				<Entry varId="T5H2"				value="10"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="T1H1" 			 displayName="DST1Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T1H2" 			 displayName="DST1Maxi"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T2H1" 			 displayName="DST2Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T2H2" 			 displayName="DST2Maxi"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T3H1" 			 displayName="DST3Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T3H2" 			 displayName="DST3Maxi"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T4H1" 			 displayName="DST4Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T4H2" 			 displayName="DST4Maxi"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T5H1" 			 displayName="DST5Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T5H2" 			 displayName="DST5Maxi"												displayType="SLIDER;-10;10;20" 			 />
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionLM" displayName="Mods.esgo_ESGO.esgoLevel.esgoLevelDynamicScaling.esgoMonstersScaling">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo" >
+				<Entry varId="T1M1"				value="-2"	/>
+				<Entry varId="T1M2"				value="1"	/>
+				<Entry varId="T2M1"				value="-3"	/>
+				<Entry varId="T2M2"				value="2"	/>
+				<Entry varId="T3M1"				value="-4"	/>
+				<Entry varId="T3M2"				value="3"	/>
+				<Entry varId="T4M1"				value="-5"	/>
+				<Entry varId="T4M2"				value="4"	/>
+				<Entry varId="T5M1"				value="-5"	/>
+				<Entry varId="T5M2"				value="5"	/>
+			</Preset>
+			<Preset id="1" displayName="esgoHard" >
+				<Entry varId="T1M1"				value="0"	/>
+				<Entry varId="T1M2"				value="2"	/>
+				<Entry varId="T2M1"				value="0"	/>
+				<Entry varId="T2M2"				value="3"	/>
+				<Entry varId="T3M1"				value="0"	/>
+				<Entry varId="T3M2"				value="4"	/>
+				<Entry varId="T4M1"				value="0"	/>
+				<Entry varId="T4M2"				value="5"	/>
+				<Entry varId="T5M1"				value="0"	/>
+				<Entry varId="T5M2"				value="6"	/>
+			</Preset>
+			<Preset id="2" displayName="esgoHardcore" >
+				<Entry varId="T1M1"				value="1"	/>
+				<Entry varId="T1M2"				value="4"	/>
+				<Entry varId="T2M1"				value="2"	/>
+				<Entry varId="T2M2"				value="5"	/>
+				<Entry varId="T3M1"				value="3"	/>
+				<Entry varId="T3M2"				value="6"	/>
+				<Entry varId="T4M1"				value="3"	/>
+				<Entry varId="T4M2"				value="8"	/>
+				<Entry varId="T5M1"				value="4"	/>
+				<Entry varId="T5M2"				value="10"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="T1M1" 			 displayName="DST1Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T1M2" 			 displayName="DST1Maxi"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T2M1" 			 displayName="DST2Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T2M2" 			 displayName="DST2Maxi"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T3M1" 			 displayName="DST3Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T3M2" 			 displayName="DST3Maxi"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T4M1" 			 displayName="DST4Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T4M2" 			 displayName="DST4Maxi"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T5M1" 			 displayName="DST5Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T5M2" 			 displayName="DST5Maxi"												displayType="SLIDER;-10;10;20" 			 />
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionLGM" displayName="Mods.esgo_ESGO.esgoLevel.esgoLevelDynamicScaling.esgoGroupMonstersScaling">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo" >
+				<Entry varId="T1GM1"				value="-2"	/>
+				<Entry varId="T1GM2"				value="-3"	/>
+				<Entry varId="T2GM1"				value="-3"	/>
+				<Entry varId="T2GM2"				value="-4"	/>
+				<Entry varId="T3GM1"				value="-3"	/>
+				<Entry varId="T3GM2"				value="-5"	/>
+				<Entry varId="T4GM1"				value="-4"	/>
+				<Entry varId="T4GM2"				value="-5"	/>
+				<Entry varId="T5GM1"				value="-4"	/>
+				<Entry varId="T5GM2"				value="-5"	/>
+			</Preset>
+			<Preset id="1" displayName="esgoHard" >
+				<Entry varId="T1GM1"				value="-1"	/>
+				<Entry varId="T1GM2"				value="1"	/>
+				<Entry varId="T2GM1"				value="-2"	/>
+				<Entry varId="T2GM2"				value="2"	/>
+				<Entry varId="T3GM1"				value="-3"	/>
+				<Entry varId="T3GM2"				value="3"	/>
+				<Entry varId="T4GM1"				value="-4"	/>
+				<Entry varId="T4GM2"				value="4"	/>
+				<Entry varId="T5GM1"				value="-5"	/>
+				<Entry varId="T5GM2"				value="5"	/>
+			</Preset>
+			<Preset id="2" displayName="esgoHardcore" >
+				<Entry varId="T1GM1"				value="0"	/>
+				<Entry varId="T1GM2"				value="2"	/>
+				<Entry varId="T2GM1"				value="0"	/>
+				<Entry varId="T2GM2"				value="3"	/>
+				<Entry varId="T3GM1"				value="0"	/>
+				<Entry varId="T3GM2"				value="4"	/>
+				<Entry varId="T4GM1"				value="0"	/>
+				<Entry varId="T4GM2"				value="6"	/>
+				<Entry varId="T5GM1"				value="0"	/>
+				<Entry varId="T5GM2"				value="7"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="T1GM1" 			 displayName="DST1Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T1GM2" 			 displayName="DST1Maxi"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T2GM1" 			 displayName="DST2Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T2GM2" 			 displayName="DST2Maxi"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T3GM1" 			 displayName="DST3Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T3GM2" 			 displayName="DST3Maxi"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T4GM1" 			 displayName="DST4Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T4GM2" 			 displayName="DST4Maxi"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T5GM1" 			 displayName="DST5Mini"												displayType="SLIDER;-10;10;20" 			 />
+			<Var id="T5GM2" 			 displayName="DST5Maxi"												displayType="SLIDER;-10;10;20" 			 />
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionLMX" displayName="Mods.esgo_ESGO.esgoLevel.esgoMaxLevel">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo" >
+				<Entry varId="MaxLVL"				value="80"	/>
+				<Entry varId="MaxLVLP"				value="100"	/>
+			</Preset>
+			<Preset id="1" displayName="esgo_Vanilla" >
+				<Entry varId="MaxLVL"				value="70"	/>
+				<Entry varId="MaxLVLP"				value="70"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="MaxLVL" 			 displayName="esgoMaxMonsterLevel"								displayType="SLIDER;30;99;69" 			 />
+			<Var id="MaxLVLP" 			 displayName="esgoMaxPlayerLevel"								displayType="SLIDER;30;99;69" 			 />
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionLB" displayName="Mods.esgo_ESGO.esgoLevel.esgoLevelBonus">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo" >
+				<Entry varId="LVLB"				value="0"	/>
+				<Entry varId="SPG"				value="1"	/>
+			</Preset>
+			<Preset id="1" displayName="esgo_Vanilla" >
+				<Entry varId="LVLB"				value="1"	/>
+				<Entry varId="SPG"				value="1"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>		
+			<Var id="SPG" 			 displayName="skillPointsPerLevel"					displayType="SLIDER;0;10;10" 	 />
+			<Var id="LVLB" 			 displayName="deadlyEnemy"		displayType="TOGGLE" 			 />
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionE" displayName="Mods.esgo_ESGO.esgoLevel.esgoExperience">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo" >
+				<Entry varId="QXPScaling"			value="1"	/>
+				<Entry varId="XPScaling"			value="0"	/>
+				<Entry varId="XPMult"				value="0.7"	/>
+				<Entry varId="QXPMult"				value="0.8"	/>
+			</Preset>
+			<Preset id="1" displayName="esgo_Vanilla" >
+				<Entry varId="QXPScaling"			value="0"	/>
+				<Entry varId="XPScaling"			value="0"	/>
+				<Entry varId="XPMult"				value="1"	/>
+				<Entry varId="QXPMult"				value="1"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="QXPScaling" 		 displayName="questXPScaling" 									displayType="TOGGLE"					 />
+			<Var id="XPScaling" 		 displayName="fightXPScaling" 									displayType="TOGGLE"					 />
+			<Var id="QXPMult" 		 	 displayName="questXPMultiplier" 									displayType="SLIDER;0;10.0;100" 		 />
+			<Var id="XPMult" 			 displayName="fightXPMultiplier"										displayType="SLIDER;0;10.0;100" 		 />
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionH" displayName="Mods.esgo_ESGO.esgo_combat.esgoHealthModifier">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo" >
+				<Entry varId="HumanHP"				value="1.0"	/>
+				<Entry varId="MonsterHP"			value="1.0"	/>
+				<Entry varId="GMonsterHP"			value="1.0"	/>
+				<Entry varId="CMonsterHP"			value="1.0"	/>
+				<Entry varId="BossHP"				value="1.5"	/>
+			</Preset>
+			<Preset id="1" displayName="esgo_Vanilla" >
+				<Entry varId="HumanHP"				value="1.0"	/>
+				<Entry varId="MonsterHP"			value="1.0"	/>
+				<Entry varId="GMonsterHP"			value="1.0"	/>
+				<Entry varId="CMonsterHP"			value="1.0"	/>
+				<Entry varId="BossHP"				value="1.0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="HumanHP" 			 displayName="esgoHMH"									displayType="SLIDER;0.1;10.0;99" 		 />
+			<Var id="MonsterHP" 		 displayName="esgoHMM"									displayType="SLIDER;0.1;10.0;99" 		 />
+			<Var id="GMonsterHP" 		 displayName="esgoHMGM"							displayType="SLIDER;0.1;10.0;99" 		 />
+			<Var id="CMonsterHP" 		 displayName="esgoHMCB"							displayType="SLIDER;0.1;10.0;99" 		 />
+			<Var id="BossHP" 		 	 displayName="esgoHMB"									displayType="SLIDER;0.1;10.0;99" 		 />
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionD" displayName="Mods.esgo_ESGO.esgo_combat.esgoDamageModifier">
+		<PresetsArray>
+			<Preset id="0" displayName="esgo_esgo" >
+				<Entry varId="PDam"					value="1.5"	/>
+				<Entry varId="PDamB"				value="1.5"	/>
+				<Entry varId="PDamS"				value="1.5"	/>
+				<Entry varId="PDamC"				value="3"	/>
+				<Entry varId="HumDam"				value="1.5"	/>
+				<Entry varId="MonDam"				value="1.5"	/>
+				<Entry varId="CMonDam"				value="1.5"	/>
+				<Entry varId="BDam"					value="1.5"	/>
+				<Entry varId="PDOT"					value="1.5"	/>
+				<Entry varId="EDOT"					value="1.5"	/>
+			</Preset>
+			<Preset id="1" displayName="esgo_Vanilla" >
+				<Entry varId="PDam"					value="1.0"	/>
+				<Entry varId="PDamB"				value="1.0"	/>
+				<Entry varId="PDamS"				value="1.0"	/>
+				<Entry varId="PDamC"				value="1.0"	/>
+				<Entry varId="HumDam"				value="1.0"	/>
+				<Entry varId="MonDam"				value="1.0"	/>
+				<Entry varId="CMonDam"				value="1.0"	/>
+				<Entry varId="BDam"					value="1.0"	/>
+				<Entry varId="PDOT"					value="1.0"	/>
+				<Entry varId="EDOT"					value="1.0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+		
+			<Var id="PDam" 			 	 displayName="damageMultiplierPlayerSigns"								displayType="SLIDER;0.1;10.0;99" 		 />
+			<Var id="PDamB" 			 displayName="damageMultiplierPlayerBombs"								displayType="SLIDER;0.1;10.0;99" 		 />
+			<Var id="PDamS" 			 displayName="damageMultiplierPlayerSigns"								displayType="SLIDER;0.1;10.0;99" 		 />
+			<Var id="PDamC" 			 displayName="damageMultiplierPlayerCrossbow"							displayType="SLIDER;0.1;20.0;199" 		 />
+			<Var id="HumDam" 		 	 displayName="damageMultiplierHumans"									displayType="SLIDER;0.1;10.0;99" 		 />
+			<Var id="MonDam" 		 	 displayName="damageMultiplierMonsters"									displayType="SLIDER;0.1;10.0;99" 		 />
+			<Var id="CMonDam" 		 	 displayName="damageMultiplierContractBeasts"							displayType="SLIDER;0.1;10.0;99" 		 />
+			<Var id="BDam" 		 	 	 displayName="damageMultiplierBosses"									displayType="SLIDER;0.1;10.0;99" 		 />
+			<Var id="PDOT" 		 	 	 displayName="damageMultiplierPlayerDoT"								displayType="SLIDER;0.1;10.0;99" 		 />
+			<Var id="EDOT" 		 	 	 displayName="damageMultiplierEnemyDoT"								displayType="SLIDER;0.1;10.0;99" 		 />
+		   
+		</VisibleVars>
+    </Group>
+</UserConfig>

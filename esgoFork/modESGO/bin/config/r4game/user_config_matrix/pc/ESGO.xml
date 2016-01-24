@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<UserConfig>
+    <Group id="SCOptionGen" displayName="Mods.ESGO. General ">
+		<PresetsArray>
+			<Preset id="0" displayName="Dynamic Scaling" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="Scale"				value="1"	/>
+				<Entry varId="SCMode"				value="0"	/>
+				<Entry varId="BFix"					value="1"	/>
+				<Entry varId="DDamage"				value="1"	/>
+				<Entry varId="MonsLVL"				value="0"	/>
+				<Entry varId="LVLReq"				value="0"	/>
+				<Entry varId="LVLUse"				value="0"	/>
+			</Preset>
+			<Preset id="1" displayName="Group Scaling" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="Scale"				value="1"	/>
+				<Entry varId="SCMode"				value="1"	/>
+				<Entry varId="BFix"					value="1"	/>
+				<Entry varId="DDamage"				value="1"	/>
+				<Entry varId="MonsLVL"				value="0"	/>
+				<Entry varId="LVLReq"				value="0"	/>
+				<Entry varId="LVLUse"				value="0"	/>
+			</Preset>
+			<Preset id="2" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="Scale"				value="0"	/>
+				<Entry varId="SCMode"				value="0"	/>
+				<Entry varId="BFix"					value="1"	/>
+				<Entry varId="DDamage"				value="1"	/>
+				<Entry varId="MonsLVL"				value="1"	/>
+				<Entry varId="LVLReq"				value="1"	/>
+				<Entry varId="LVLUse"				value="0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="Scale" 		 	 displayName="Scaling" 														displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="SCMode" 		 	 displayName="Scaling Mode" 												displayType="OPTIONS"					tags="customNames;nonLocalized;customDisplayName">
+              <OptionsArray>
+					<Option id="0" displayName="Dynamic Scaling">
+                        <Entry varId="SCMode" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="Group Scaling">
+                        <Entry varId="SCMode" value="1"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="BFix" 		 	 	 displayName="Bestiary Fix" 												displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="DDamage" 		 	 displayName="Durablity Damage" 											displayType="OPTIONS"					tags="customNames;nonLocalized;customDisplayName">
+              <OptionsArray>
+					<Option id="0" displayName="Overhauled">
+                        <Entry varId="SCMode" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="Vanilla">
+                        <Entry varId="SCMode" value="1"/>
+                    </Option>
+                    <Option id="2" displayName="Off">
+                        <Entry varId="SCMode" value="2"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="MonsLVL" 			 displayName="Show Enemy Level"												displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="LVLReq" 		 	 displayName="Gear Level Requirement" 										displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="LVLUse" 		 	 displayName="Maximum Item Level Difference" 								displayType="SLIDER;0;50;50"			tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionCM" displayName="Mods.ESGO.Combat.Control">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="Lockon"				value="0"	/>
+				<Entry varId="LockonM"				value="0"	/>
+				<Entry varId="Combatstate"			value="1"	/>
+				<Entry varId="CLockon"				value="1"	/>
+				<Entry varId="ASheathe"				value="0"	/>
+			</Preset>
+			<Preset id="1" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="Lockon"				value="1"	/>
+				<Entry varId="LockonM"				value="0"	/>
+				<Entry varId="Combatstate"			value="1"	/>
+				<Entry varId="CLockon"				value="1"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="Lockon" 		 	 	 displayName="Automatic Targeting (Lock-On)" 									displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="LockonM" 		 	 	 displayName="Targeting Mode (No Lock-On Targeting Mode)" 						displayType="OPTIONS"					tags="customNames;nonLocalized;customDisplayName">
+               <OptionsArray>
+					<Option id="0" displayName="Camera Targeting (Mouse Friendly)">
+                        <Entry varId="LockonM" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="Movement Targeting (Contr. Friendly)">
+                        <Entry varId="LockonM" value="1"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="CLockon" 		 	 	 displayName="Crossbow Auto Lock-On" 											displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="Combatstate" 		 	 displayName="Combat Stance" 													displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ASheathe" 		 	 	 displayName="Auto Sheath Swords" 												displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionCWh" displayName="Mods.ESGO.Combat.Abilities.Whirl & Rend.Whirl">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="WhSR"					value="0"	/>
+				<Entry varId="WhSU"					value="0.8"	/>
+				<Entry varId="WhAU"					value="1"	/>
+				<Entry varId="WhER"					value="0"	/>
+				<Entry varId="WhDM"					value="0.9"	/>
+			</Preset>
+			<Preset id="1" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="WhSR"					value="1"	/>
+				<Entry varId="WhSU"					value="1"	/>
+				<Entry varId="WhAU"					value="1"	/>
+				<Entry varId="WhER"					value="0"	/>
+				<Entry varId="WhDM"					value="1"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="WhSR" 		 	 	 	 displayName="Whirl - Skill Requirement" 						displayType="TOGGLE"		 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="WhSU" 		 	 	 	 displayName="Whirl - Stamina Usage" 							displayType="SLIDER;0;5;25" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="WhAU" 			 	 	 displayName="Whirl - Adrenaline Usage" 						displayType="SLIDER;0;5;25" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="WhER"	 		 	 	 displayName="Whirl - Extended Range" 							displayType="TOGGLE"		 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="WhDM"	 		 	 	 displayName="Whirl - Damage Multiplier" 						displayType="SLIDER;0;10;50" 			tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionRend" displayName="Mods.ESGO.Combat.Abilities.Whirl & Rend.Rend">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="ReSR"					value="0"	/>
+				<Entry varId="ReSU"					value="1"	/>
+				<Entry varId="ReAU"					value="2"	/>
+				<Entry varId="ReER"					value="0"	/>
+				<Entry varId="ReDM"					value="1"	/>
+				<Entry varId="ReDPA"				value="1"	/>
+				<Entry varId="ReDPS"				value="1"	/>
+			</Preset>
+			<Preset id="1" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="ReSR"					value="1"	/>
+				<Entry varId="ReSU"					value="1"	/>
+				<Entry varId="ReAU"					value="1"	/>
+				<Entry varId="ReER"					value="0"	/>
+				<Entry varId="ReDM"					value="1"	/>
+				<Entry varId="ReDPA"				value="1"	/>
+				<Entry varId="ReDPS"				value="1"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="ReSR" 		 	 	 	 displayName="Rend - Skill Requirement" 						displayType="TOGGLE"		 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ReSU" 		 	 	 	 displayName="Rend - Stamina Usage" 							displayType="SLIDER;0;5;25" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ReAU" 		 	 	 	 displayName="Rend - Adrenaline Usage" 							displayType="SLIDER;0;5;25" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ReER" 		 	 		 displayName="Rend - Extended Range" 							displayType="TOGGLE" 					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ReDM" 		 	 		 displayName="Rend - Damage Multiplier" 						displayType="SLIDER;0;10;50" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ReDPA" 		 	 	 displayName="Rend - Adrenaline Damage" 						displayType="SLIDER;0;10;50" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ReDPS" 		 	 	 displayName="Rend - Stamina Damage" 							displayType="SLIDER;0;10;50" 		tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionCW" displayName="Mods.ESGO.Combat.Abilities.Witcher Rage">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="ASC"					value="1"	/>
+				<Entry varId="ASCL"					value="1"	/>
+				<Entry varId="ASSD"					value="1"	/>
+				<Entry varId="FASC"					value="10"	/>
+				<Entry varId="SASC"					value="16"	/>
+				<Entry varId="EVSC"					value="8"	/>
+				<Entry varId="RDSC"					value="0.7"	/>
+				<Entry varId="RDSCH"				value="1.0"	/>
+				<Entry varId="RDSCD"				value="0.6"	/>
+				<Entry varId="ASFA"					value="0.03"/>
+				<Entry varId="ASHA"					value="0.10"/>
+				<Entry varId="ASAPF"				value="0.08"/>
+				<Entry varId="ASAPH"				value="0.16"/>
+				<Entry varId="LightIn"				value="0.05"/>
+				<Entry varId="HeavyDe"				value="0.04"/>
+				<Entry varId="ASDPS"				value="25"/>
+				<Entry varId="ASDPH"				value="30"/>
+				<Entry varId="ASDR"					value="0.07"/>
+				<Entry varId="ASFAN"				value="1.00"/>
+				<Entry varId="ASHAN"				value="1.00"/>
+				<Entry varId="ASDRN"				value="1.00"/>
+			</Preset>
+			<Preset id="1" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="ASC"					value="1"	/>
+				<Entry varId="ASCL"					value="1"	/>
+				<Entry varId="ASSD"					value="0"	/>
+				<Entry varId="FASC"					value="0"	/>
+				<Entry varId="SASC"					value="0"	/>
+				<Entry varId="EVSC"					value="0"	/>
+				<Entry varId="RDSC"					value="0"	/>
+				<Entry varId="RDSCH"				value="0"	/>
+				<Entry varId="RDSCD"				value="0"	/>
+				<Entry varId="ASFA"					value="0.03"/>
+				<Entry varId="ASHA"					value="0.10"/>
+				<Entry varId="ASAPF"				value="0.00"/>
+				<Entry varId="ASAPH"				value="0.00"/>
+				<Entry varId="LightIn"				value="0"	/>
+				<Entry varId="HeavyDe"				value="0"	/>
+				<Entry varId="ASDPS"				value="0"	/>
+				<Entry varId="ASDPH"				value="0"	/>
+				<Entry varId="ASDR"					value="0.07"/>
+				<Entry varId="ASFAN"				value="1.00"/>
+				<Entry varId="ASHAN"				value="1.00"/>
+				<Entry varId="ASDRN"				value="1.00"/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="ASC" 		 	 		 displayName="Attack Speed - Speed Cap High" 									displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ASCL" 		 	 		 displayName="Attack Speed - Speed Cap Low" 									displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ASSD" 		 	 		 displayName="Attack Speed - Skill Dependency" 									displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ASFA" 		 	 		 displayName="Increments Per Skill Level - Fast Attack" 						displayType="SLIDER;0.00;0.50;50" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ASHA" 		 	 		 displayName="Increments Per Skill Level - Strong Attack" 						displayType="SLIDER;0.00;0.50;50" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ASDR" 		 	 		 displayName="Increments Per Skill Level - Dodge & Roll" 						displayType="SLIDER;0.00;0.50;50" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ASAPF" 		 	 	 displayName="Increments Per Adrenaline Point - Fast Attacks" 					displayType="SLIDER;0.00;0.50;50" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ASAPH" 		 	 	 displayName="Increments Per Adrenaline Point - Strong Attacks" 				displayType="SLIDER;0.00;0.50;50" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="LightIn" 		 	 	 displayName="Increments Per Light Armor Piece"					 				displayType="SLIDER;0.00;0.50;50" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="HeavyDe" 		 	 	 displayName="Decrements Per Heavy Armor Piece"					 				displayType="SLIDER;0.00;0.50;50" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="FASC"	 		 	 	 displayName="Stamina Cost - Fast Attacks" 										displayType="SLIDER;0;100;100" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="SASC" 			 	 	 displayName="Stamina Cost - Strong Attacks" 									displayType="SLIDER;0;100;100" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="EVSC" 		 	 		 displayName="Stamina Cost - Evasion"							 				displayType="SLIDER;0;100;100"	 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="RDSC" 		 	 		 displayName="Stamina Regen Delay - Fast Attacks"							 	displayType="SLIDER;0;3;30"	 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="RDSCH" 	 	 		 displayName="Stamina Regen Delay - Strong Attacks"							 	displayType="SLIDER;0;3;30"	 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="RDSCD" 	 	 		 displayName="Stamina Regen Delay - Evasion"								 	displayType="SLIDER;0;3;30"	 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ASDPS" 		 	 	 displayName="Speed Malus - Max Reduction Percentage At No Stamina" 			displayType="SLIDER;0;100;100" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ASDPH" 		 	 	 displayName="Speed Malus - Max Reduction Percentage At No Health" 				displayType="SLIDER;0;100;100" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ASFAN" 		 	 	 displayName="Speed Multiplier - Fast Attack (No Skill Requirement)" 			displayType="SLIDER;0.0;10;100" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ASHAN" 		 	 	 displayName="Speed Multiplier - Strong Attack (No Skill Requirement)" 			displayType="SLIDER;0.0;10;100" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ASDRN" 		 	 	 displayName="Speed Multiplier - Dodge & Roll (No Skill Requirement)" 			displayType="SLIDER;0.0;10;100" 		tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+			
+    <Group id="SCOptionCR" displayName="Mods.ESGO.Combat.Abilities.Reaper's Gambit">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="Dism"					value="100"	/>
+				<Entry varId="Finish"				value="60"	/>
+				<Entry varId="RSAct"				value="1"	/>
+				<Entry varId="RSHABB"				value="1"	/>
+				<Entry varId="RSFV"					value="1"	/>
+				<Entry varId="RSAF"					value="0"	/>
+				<Entry varId="RSAGF"				value="0.7"	/>
+				<Entry varId="RSAGD"				value="0"	/>
+			</Preset>
+			<Preset id="1" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="Dism"					value="30"	/>
+				<Entry varId="Finish"				value="30"	/>
+				<Entry varId="RSHABB"				value="0"	/>
+				<Entry varId="RSAct"				value="0"	/>
+				<Entry varId="RSFV"					value="1"	/>
+				<Entry varId="RSAF"					value="0"	/>
+				<Entry varId="RSAGF"				value="0.7"	/>
+				<Entry varId="RSAGD"				value="0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="RSAct" 		 	 	 displayName="Reaper's Gambit" 													displayType="TOGGLE" 					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="RSHABB" 		 	 	 displayName="Reaper's Gambit - Low Stamina Block Break"			 			displayType="TOGGLE" 					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="RSFV" 		 	 	 	 displayName="Reaper's Gambit - Finisher Vulnerability" 						displayType="TOGGLE" 					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="RSAF" 		 	 		 displayName="Reaper's Gambit - Allow Automatic Finishers" 						displayType="TOGGLE" 					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="Finish" 		 	 	 displayName="Reaper's Gambit - Finisher Chance" 								displayType="SLIDER;0;100;100" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="RSAGF" 		 	 	 displayName="Reaper's Gambit - Finisher Adrenaline Gain" 						displayType="SLIDER;0.0;3.0;30" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="Dism" 		 	 		 displayName="Reaper's Gambit - Dismemberment Chance" 							displayType="SLIDER;0;100;100" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="RSAGD" 		 	 	 displayName="Reaper's Gambit - Dismember Adrenaline Gain" 						displayType="SLIDER;0.0;3.0;30" 		tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionCP" displayName="Mods.ESGO.Combat.Abilities.Defender's Resolve">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="PCheck"				value="0"	/>
+				<Entry varId="PCheckS"				value="0"	/>
+				<Entry varId="PCheckA"				value="1"	/>
+				<Entry varId="CCheck"				value="1"	/>
+				<Entry varId="CCheckA"				value="0"	/>
+				<Entry varId="CADRG"				value="1"	/>
+				<Entry varId="CADRGA"				value="0.3"	/>
+				<Entry varId="CTH"					value="0"	/>
+				<Entry varId="CTHH"					value="1"	/>
+				<Entry varId="CTHSH"				value="2"	/>
+				<Entry varId="CTM"					value="0"	/>
+				<Entry varId="CTMH"					value="2"	/>
+				<Entry varId="FFNS"					value="1"	/>
+				<Entry varId="FFL"					value="1"	/>
+				<Entry varId="KAT"					value="1"	/>
+				<Entry varId="KST"					value="75"	/>
+				<Entry varId="KHT"					value="60"	/>
+				<Entry varId="BleedDam"				value="35"	/>
+				<Entry varId="BleedDur"				value="3"	/>
+				<Entry varId="DisarmSH"				value="1"	/>
+				<Entry varId="StamDam"				value="25"	/>
+				<Entry varId="StamDur"				value="4"	/>
+			</Preset>
+			<Preset id="1" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="PCheck"				value="0"	/>
+				<Entry varId="PCheckS"				value="0"	/>
+				<Entry varId="PCheckA"				value="0"	/>
+				<Entry varId="CCheck"				value="0"	/>
+				<Entry varId="CCheckA"				value="0"	/>
+				<Entry varId="CADRG"				value="0"	/>
+				<Entry varId="CADRGA"				value="0.3"	/>
+				<Entry varId="CTH"					value="1"	/>
+				<Entry varId="CTHH"					value="2"	/>
+				<Entry varId="CTHSH"				value="2"	/>
+				<Entry varId="CTM"					value="0"	/>
+				<Entry varId="CTMH"					value="0"	/>
+				<Entry varId="FFNS"					value="0"	/>
+				<Entry varId="FFL"					value="1"	/>
+				<Entry varId="KAT"					value="1"	/>
+				<Entry varId="KST"					value="0"	/>
+				<Entry varId="KHT"					value="100"	/>
+				<Entry varId="BleedDam"				value="0"	/>
+				<Entry varId="BleedDur"				value="0"	/>
+				<Entry varId="DisarmSH"				value="0"	/>
+				<Entry varId="StamDam"				value="0"	/>
+				<Entry varId="StamDur"				value="0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>	
+			<Var id="PCheck" 		 	 displayName="Parry - Heavy Attack" 										displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="PCheckS" 		 	 displayName="Parry - Heavy Attack Staggers" 								displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="PCheckA" 		 	 displayName="Parry - Arrow (Without Skill)" 								displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="CCheck" 		 	 displayName="Counter - Heavy Attack" 										displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="CCheckA" 		 	 displayName="Counter - Arrow (Without Skill)" 								displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="CADRG" 		 	 displayName="Counter - Adrenaline Gain" 									displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="CADRGA" 		 	 displayName="Counter - Amount Gained" 										displayType="SLIDER;0.0;3.0;30"			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="CTH" 		 	 	 displayName="Counter - Human Attacks" 										displayType="OPTIONS"					tags="customNames;nonLocalized;customDisplayName" >
+				<OptionsArray>
+					<Option id="0" displayName="Counter Type - Sword Counter">
+                        <Entry varId="CTH" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="Counter Type - Kick">
+                        <Entry varId="CTH" value="1"/>
+                    </Option>
+                    <Option id="2" displayName="Counter Type - Bash">
+                        <Entry varId="CTH" value="2"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="CTHH" 		 	 	displayName="Counter - Heavy Human Attacks" 								displayType="OPTIONS"					tags="customNames;nonLocalized;customDisplayName" >
+              <OptionsArray>
+					<Option id="0" displayName="Counter Type - Sword Counter">
+                        <Entry varId="CTHH" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="Counter Type - Kick">
+                        <Entry varId="CTHH" value="1"/>
+                    </Option>
+                    <Option id="2" displayName="Counter Type - Bash">
+                        <Entry varId="CTHH" value="2"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="CTHSH" 		 	 	displayName="Counter - Human Attacks (Two Handed Weapon)" 				displayType="OPTIONS"					tags="customNames;nonLocalized;customDisplayName" >
+              <OptionsArray>
+					<Option id="0" displayName="Counter Type - Sword Counter">
+                        <Entry varId="CTHSH" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="Counter Type - Kick">
+                        <Entry varId="CTHSH" value="1"/>
+                    </Option>
+                    <Option id="2" displayName="Counter Type - Bash">
+                        <Entry varId="CTHSH" value="2"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="CTM" 		 	 	 displayName="Counter - Monster Attacks" 									displayType="OPTIONS"					tags="customNames;nonLocalized;customDisplayName" >
+              <OptionsArray>
+					<Option id="0" displayName="Counter Type - Sword Counter">
+                        <Entry varId="CTM" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="Counter Type - Kick">
+                        <Entry varId="CTM" value="1"/>
+                    </Option>
+					<Option id="2" displayName="Counter Type - Bash">
+                        <Entry varId="CTM" value="2"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="CTMH" 		 	 	displayName="Counter - Heavy Monster Attacks" 								displayType="OPTIONS"					tags="customNames;nonLocalized;customDisplayName" >
+              <OptionsArray>
+					<Option id="0" displayName="Counter Type - Sword Counter">
+                        <Entry varId="CTMH" value="0"/>
+                    </Option>
+                    <Option id="1" displayName="Counter Type - Kick">
+                        <Entry varId="CTMH" value="1"/>
+                    </Option>
+                    <Option id="2" displayName="Counter Type - Bash">
+                        <Entry varId="CTMH" value="2"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="BleedDam" 			 displayName="Sword Counter - Bleed Damage Per Skill Level" 				displayType="SLIDER;0;150;150"			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="BleedDur" 			 displayName="Sword Counter - Bleed Duration Per Skill Level" 				displayType="SLIDER;0;15;15"			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="DisarmSH" 			 displayName="Sword Counter - Chance to Disarm Shields" 					displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="StamDam" 			 displayName="Kick Counter - Stamina Damage Per Skill Level" 				displayType="SLIDER;0;150;150"			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="StamDur" 			 displayName="Kick Counter - Stamina Regeneration Delay" 					displayType="SLIDER;0;10;100"			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="KAT" 		 	 	 displayName="Bash Counter (Knockdown) - Player Adrenaline Threshold" 		displayType="SLIDER;0;6;6"				tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="KST" 		 	 	 displayName="Bash Counter (Knockdown) - Player Stamina Threshold" 			displayType="SLIDER;0;100;100"			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="KHT" 		 	 	 displayName="Bash Counter (Knockdown) - Enemy Health Threshold" 			displayType="SLIDER;0;100;100"			tags="customNames;nonLocalized;customDisplayName" /> 
+			<Var id="FFNS" 		 		 displayName="Dodge - No Fleet Footed Stagger" 								displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="FFL" 		 		 displayName="No Fleet Footed Stagger - Level" 								displayType="SLIDER;1;5;4"				tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+					
+    <Group id="SCOptionCA" displayName="Mods.ESGO.Combat.Abilities.Adrenaline Control">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="ADRP"					value="3"	/>
+				<Entry varId="ADRGenH"				value="0.5"	/>
+				<Entry varId="ADRGenR"				value="0.5"	/>
+				<Entry varId="ADRGenB"				value="0.5"	/>
+				<Entry varId="ADRGenS"				value="0.6"	/>
+				<Entry varId="ADRDeg"				value="1.2"	/>
+				<Entry varId="ADRDegC"				value="0.7"	/>
+				<Entry varId="ADRDegMV"				value="2.5"	/>
+				<Entry varId="ADRDegMVC"			value="3"	/>
+				<Entry varId="ADRDegH"				value="1.7"	/>
+				<Entry varId="ADRDegHH"				value="2.3"	/>
+				<Entry varId="ADRDegHSH"			value="3.2"	/>
+				<Entry varId="CADRDeg"				value="1"	/>
+			</Preset>
+			<Preset id="1" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="ADRP"					value="3"	/>
+				<Entry varId="ADRGenH"				value="1"	/>
+				<Entry varId="ADRGenR"				value="1"	/>
+				<Entry varId="ADRGenB"				value="1"	/>
+				<Entry varId="ADRGenS"				value="1"	/>
+				<Entry varId="ADRDeg"				value="1"	/>
+				<Entry varId="ADRDegC"				value="1"	/>
+				<Entry varId="ADRDegMV"				value="3"	/>
+				<Entry varId="ADRDegMV"				value="3"	/>
+				<Entry varId="ADRDegH"				value="1"	/>
+				<Entry varId="ADRDegHH"				value="1"	/>
+				<Entry varId="ADRDegHSH"			value="1"	/>
+				<Entry varId="CADRDeg"				value="0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="ADRP" 		 	 	 	 displayName="Maximum Adrenaline Points" 							displayType="SLIDER;0;6.0;6" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ADRGenH" 		 	 	 displayName="Adrenaline Generation - Melee" 						displayType="SLIDER;0.0;10.0;100" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ADRGenB" 		 	 	 displayName="Adrenaline Generation - Bombs" 						displayType="SLIDER;0.0;10.0;100" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ADRGenS" 		 	 	 displayName="Adrenaline Generation - Signs" 						displayType="SLIDER;0.0;10.0;100" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ADRGenR" 		 	 	 displayName="Adrenaline Generation - Ranged" 						displayType="SLIDER;0.0;10.0;100" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ADRDegH" 		 	 	 displayName="Adrenaline Degeneration - Light Hits" 				displayType="SLIDER;0.0;10.0;100" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ADRDegHH" 		 	 	 displayName="Adrenaline Degeneration - Heavy Hits" 				displayType="SLIDER;0.0;10.0;100" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ADRDegHSH" 	 	 	 displayName="Adrenaline Degeneration - Super Heavy Hits" 			displayType="SLIDER;0.0;10.0;100" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ADRDeg" 		 	 	 displayName="Adrenaline Degeneration - Over Time (Non-Combat)" 	displayType="SLIDER;0.0;10.0;100" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ADRDegC" 		 	 	 displayName="Adrenaline Degeneration - Over Time (Combat)" 		displayType="SLIDER;0.0;10.0;100" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ADRDegMV" 		 	 	 displayName="Maximum Adrenaline Time Drain - Combat" 				displayType="SLIDER;0.0;6.0;60" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="ADRDegMVC" 		 	 displayName="Maximum Adrenaline Time Drain - Non-Combat" 			displayType="SLIDER;0.0;6.0;60" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="CADRDeg" 		 	 	 displayName="Combat Adrenaline Degeneration" 						displayType="TOGGLE" 					tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionCE" displayName="Mods.ESGO.Combat.Enemies">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="EnAgg"					value="4"	/>
+				<Entry varId="LGCh"						value="2"	/>
+				<Entry varId="RGCh"						value="0.5"	/>
+				<Entry varId="CCh"						value="0.5"	/>
+				<Entry varId="CChPH"					value="1"	/>
+				<Entry varId="GChPH"					value="2"	/>
+				<Entry varId="HCCh"						value="2"	/>
+				<Entry varId="HGCh"						value="1"	/>
+				<Entry varId="EDND"						value="1"	/>
+				<Entry varId="EDDN"						value="35"	/>
+			</Preset>
+			<Preset id="1" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="EnAgg"					value="3"	/>
+				<Entry varId="LGCh"						value="1"	/>
+				<Entry varId="RGCh"						value="1"	/>
+				<Entry varId="CCh"						value="1"	/>
+				<Entry varId="CChPH"					value="1"	/>
+				<Entry varId="GChPH"					value="1"	/>
+				<Entry varId="HCCh"						value="1"	/>
+				<Entry varId="HGCh"						value="1"	/>
+				<Entry varId="EDND"						value="1"	/>
+				<Entry varId="EDDN"						value="0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="EnAgg" 		 	 	displayName="Enemy Combat Aggressiveness" 							displayType="OPTIONS"					tags="customNames;nonLocalized;customDisplayName" >
+              <OptionsArray>
+					<Option id="0" displayName="Very Low">
+                        <Entry varId="EnAgg" value="0"/>
+                    </Option>
+					<Option id="1" displayName="Lower">
+                        <Entry varId="EnAgg" value="1"/>
+                    </Option>
+                    <Option id="2" displayName="Low">
+                        <Entry varId="EnAgg" value="2"/>
+                    </Option>
+                    <Option id="3" displayName="Normal">
+                        <Entry varId="EnAgg" value="3"/>
+                    </Option>
+                    <Option id="4" displayName="High">
+                        <Entry varId="EnAgg" value="4"/>
+                    </Option>
+                    <Option id="5" displayName="Higher">
+                        <Entry varId="EnAgg" value="5"/>
+                    </Option>
+                    <Option id="6" displayName="Very High">
+                        <Entry varId="EnAgg" value="6"/>
+                    </Option>
+				</OptionsArray>
+			</Var>
+			<Var id="LGCh" 			 displayName="Chance To Lower Guard (Multiplier)"						displayType="SLIDER;0;10;20" 	tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="RGCh" 			 displayName="Chance To Raise Guard (Multiplier)"						displayType="SLIDER;0;10;20" 	tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="CCh" 			 displayName="Chance To Counter (Multiplier)"							displayType="SLIDER;0;10;20" 	tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="CChPH" 		 displayName="Counter Chance Per Hit (Multiplier)"						displayType="SLIDER;0;10;20" 	tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="GChPH" 		 displayName="Block Chance Per Hit (Multiplier)"						displayType="SLIDER;0;10;20" 	tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="HCCh" 			 displayName="Hits To Counter (Multiplier)"								displayType="SLIDER;0;10;20" 	tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="HGCh" 			 displayName="Hits to Block (Multiplier)"								displayType="SLIDER;0;10;20" 	tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="EDND" 			 displayName="Enemy Dodge - Negate Damage"								displayType="TOGGLE" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="EDDN" 			 displayName="Enemy Dodge - Damage Taken (Percentage)"					displayType="SLIDER;0;100;100" 	tags="customNames;nonLocalized;customDisplayName" />
+
+			</VisibleVars>
+    </Group>
+				
+    <Group id="SCOptionLG" displayName="Mods.ESGO.Levels.Group Scaling">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="GSL3"				value="-11"	/>
+				<Entry varId="GSL4"				value="-13"	/>
+				<Entry varId="GSL1"				value="-7"	/>
+				<Entry varId="GSL2"				value="-3"	/>
+				<Entry varId="GSN1"				value="-2"	/>
+				<Entry varId="GSN2"				value="2"	/>
+				<Entry varId="GSH1"				value="5"	/>
+				<Entry varId="GSH2"				value="7"	/>
+				<Entry varId="GSH3"				value="10"	/>
+				<Entry varId="GSH4"				value="15"	/>
+				<Entry varId="GSPE"				value="1"	/>
+				<Entry varId="GSHDC"			value="0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="GSL3" 			 displayName="Pushover Enemies - Minimum"											displayType="SLIDER;-30;10;40" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="GSL4" 			 displayName="Pushover Enemies - Maximum"											displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="GSL1" 			 displayName="Weaker Enemies - Minimum"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="GSL2" 			 displayName="Weaker Enemies - Maximum"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="GSN1" 			 displayName="Normal Enemies - Minimum"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="GSN2" 			 displayName="Normal Enemies - Maximum"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="GSH1" 			 displayName="Stronger Enemies - Minimum"											displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="GSH2" 			 displayName="Stronger Enemies - Maximum"											displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="GSH3" 			 displayName="Hardcore Enemies - Minimum"											displayType="SLIDER;-10;30;40" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="GSH4" 			 displayName="Hardcore Enemies - Maximum"											displayType="SLIDER;-10;30;40" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="GSPE" 			 displayName="Pushover Enemy Category"												displayType="TOGGLE" 					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="GSHDC" 		 displayName="Regular Hardcore Mode"												displayType="TOGGLE" 					tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionLH" displayName="Mods.ESGO.Levels.Dynamic Scaling.Humans">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="T1H1"				value="-1"	/>
+				<Entry varId="T1H2"				value="-1"	/>
+				<Entry varId="T2H1"				value="-1"	/>
+				<Entry varId="T2H2"				value="-2"	/>
+				<Entry varId="T3H1"				value="-2"	/>
+				<Entry varId="T3H2"				value="-3"	/>
+				<Entry varId="T4H1"				value="-2"	/>
+				<Entry varId="T4H2"				value="-3"	/>
+				<Entry varId="T5H1"				value="-3"	/>
+				<Entry varId="T5H2"				value="-3"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="T1H1" 			 displayName="Tier 1 Minimum Added (LEVEL 5 - 10)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T1H2" 			 displayName="Tier 1 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T2H1" 			 displayName="Tier 2 Minimum Added (LEVEL 10 - 20)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T2H2" 			 displayName="Tier 2 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T3H1" 			 displayName="Tier 3 Minimum Added (LEVEL 20 - 30)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T3H2" 			 displayName="Tier 3 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T4H1" 			 displayName="Tier 4 Minimum Added (LEVEL 30 - 40)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T4H2" 			 displayName="Tier 4 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T5H1" 			 displayName="Tier 5 Minimum Added (LEVEL 40 - MAX)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T5H2" 			 displayName="Tier 5 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionLM" displayName="Mods.ESGO.Levels.Dynamic Scaling.Monsters">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="T1M1"				value="-2"	/>
+				<Entry varId="T1M2"				value="1"	/>
+				<Entry varId="T2M1"				value="-3"	/>
+				<Entry varId="T2M2"				value="2"	/>
+				<Entry varId="T3M1"				value="-4"	/>
+				<Entry varId="T3M2"				value="3"	/>
+				<Entry varId="T4M1"				value="-5"	/>
+				<Entry varId="T4M2"				value="4"	/>
+				<Entry varId="T5M1"				value="-5"	/>
+				<Entry varId="T5M2"				value="5"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="T1M1" 			 displayName="Tier 1 Minimum Added (LEVEL 5 - 10)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T1M2" 			 displayName="Tier 1 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T2M1" 			 displayName="Tier 2 Minimum Added (LEVEL 10 - 20)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T2M2" 			 displayName="Tier 2 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T3M1" 			 displayName="Tier 3 Minimum Added (LEVEL 20 - 30)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T3M2" 			 displayName="Tier 3 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T4M1" 			 displayName="Tier 4 Minimum Added (LEVEL 30 - 40)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T4M2" 			 displayName="Tier 4 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T5M1" 			 displayName="Tier 5 Minimum Added (LEVEL 40 - MAX)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T5M2" 			 displayName="Tier 5 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionLGM" displayName="Mods.ESGO.Levels.Dynamic Scaling.Grouped Monsters">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="T1GM1"				value="-2"	/>
+				<Entry varId="T1GM2"				value="-3"	/>
+				<Entry varId="T2GM1"				value="-3"	/>
+				<Entry varId="T2GM2"				value="-4"	/>
+				<Entry varId="T3GM1"				value="-3"	/>
+				<Entry varId="T3GM2"				value="-5"	/>
+				<Entry varId="T4GM1"				value="-4"	/>
+				<Entry varId="T4GM2"				value="-5"	/>
+				<Entry varId="T5GM1"				value="-4"	/>
+				<Entry varId="T5GM2"				value="-5"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="T1GM1" 			 displayName="Tier 1 Minimum Added (LEVEL 5 - 10)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T1GM2" 			 displayName="Tier 1 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T2GM1" 			 displayName="Tier 2 Minimum Added (LEVEL 10 - 20)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T2GM2" 			 displayName="Tier 2 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T3GM1" 			 displayName="Tier 3 Minimum Added (LEVEL 20 - 30)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T3GM2" 			 displayName="Tier 3 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T4GM1" 			 displayName="Tier 4 Minimum Added (LEVEL 30 - 40)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T4GM2" 			 displayName="Tier 4 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T5GM1" 			 displayName="Tier 5 Minimum Added (LEVEL 40 - MAX)"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="T5GM2" 			 displayName="Tier 5 Maximum Added"												displayType="SLIDER;-10;10;20" 			tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionLMX" displayName="Mods.ESGO.Levels.Maximum Levels">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="MaxLVL"				value="80"	/>
+				<Entry varId="MaxLVLP"				value="100"	/>
+			</Preset>
+			<Preset id="1" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="MaxLVL"				value="70"	/>
+				<Entry varId="MaxLVLP"				value="70"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="MaxLVL" 			 displayName="Maximum Monster Level"				displayType="SLIDER;40;100;60" 			tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="MaxLVLP" 			 displayName="Maximum Player Level"					displayType="SLIDER;40;100;60" 			tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionLB" displayName="Mods.ESGO.Levels.Level Bonuses">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="LVLB"				value="0"	/>
+				<Entry varId="SPG"				value="1"	/>
+			</Preset>
+			<Preset id="1" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="LVLB"				value="1"	/>
+				<Entry varId="SPG"				value="1"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>		
+			<Var id="SPG" 			 displayName="Player - Skill Points Per Level"					displayType="SLIDER;0;10;10" 	tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="LVLB" 			 displayName="Enemies - Deadly Bonuses (Without Scaling)"		displayType="TOGGLE" 			tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionE" displayName="Mods.ESGO.Experience">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="QXPScaling"			value="1"	/>
+				<Entry varId="XPScaling"			value="0"	/>
+				<Entry varId="XPMult"				value="0.7"	/>
+				<Entry varId="QXPMult"				value="0.8"	/>
+			</Preset>
+			<Preset id="1" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="QXPScaling"			value="0"	/>
+				<Entry varId="XPScaling"			value="0"	/>
+				<Entry varId="XPMult"				value="1"	/>
+				<Entry varId="QXPMult"				value="1"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="QXPScaling" 		 displayName="Quest Experience Scaling" 									displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="XPScaling" 		 displayName="Fighting Experience Scaling" 									displayType="TOGGLE"					tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="QXPMult" 		 	 displayName="Quest Experience Multiplier" 									displayType="SLIDER;0;10.0;100" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="XPMult" 			 displayName="Fighting XP Multiplier"										displayType="SLIDER;0;10.0;100" 		tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+	
+    <Group id="SCOptionH" displayName="Mods.ESGO.Health Modifiers">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="HumanHP"				value="1.0"	/>
+				<Entry varId="MonsterHP"			value="1.0"	/>
+				<Entry varId="GMonsterHP"			value="1.0"	/>
+				<Entry varId="CMonsterHP"			value="1.0"	/>
+				<Entry varId="BossHP"				value="1.5"	/>
+			</Preset>
+			<Preset id="1" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="HumanHP"				value="1.0"	/>
+				<Entry varId="MonsterHP"			value="1.0"	/>
+				<Entry varId="GMonsterHP"			value="1.0"	/>
+				<Entry varId="CMonsterHP"			value="1.0"	/>
+				<Entry varId="BossHP"				value="1.0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="HumanHP" 			 displayName="Health Multiplier - Humans"									displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="MonsterHP" 		 displayName="Health Multiplier - Monsters"									displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="GMonsterHP" 		 displayName="Health Multiplier - Group Monsters"							displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="CMonsterHP" 		 displayName="Health Multiplier - Contract Beasts"							displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="BossHP" 		 	 displayName="Health Multiplier - Bosses"									displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+
+		</VisibleVars>
+    </Group>
+
+    <Group id="SCOptionD" displayName="Mods.ESGO.Damage Modifiers">
+		<PresetsArray>
+			<Preset id="0" displayName="Default" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="PDam"					value="1.5"	/>
+				<Entry varId="PDamB"				value="1.5"	/>
+				<Entry varId="PDamS"				value="1.5"	/>
+				<Entry varId="PDamC"				value="3"	/>
+				<Entry varId="HumDam"				value="1.5"	/>
+				<Entry varId="MonDam"				value="1.5"	/>
+				<Entry varId="CMonDam"				value="1.5"	/>
+				<Entry varId="BDam"					value="1.5"	/>
+				<Entry varId="PDOT"					value="1.5"	/>
+				<Entry varId="EDOT"					value="1.5"	/>
+			</Preset>
+			<Preset id="1" displayName="Vanilla" tags="customNames;nonLocalized;customDisplayName">
+				<Entry varId="PDam"					value="1.0"	/>
+				<Entry varId="PDamB"				value="1.0"	/>
+				<Entry varId="PDamS"				value="1.0"	/>
+				<Entry varId="PDamC"				value="1.0"	/>
+				<Entry varId="HumDam"				value="1.0"	/>
+				<Entry varId="MonDam"				value="1.0"	/>
+				<Entry varId="CMonDam"				value="1.0"	/>
+				<Entry varId="BDam"					value="1.0"	/>
+				<Entry varId="PDOT"					value="1.0"	/>
+				<Entry varId="EDOT"					value="1.0"	/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+		
+			<Var id="PDam" 			 	 displayName="Damage Multiplier - Player Melee"								displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="PDamB" 			 displayName="Damage Multiplier - Player Bombs"								displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="PDamS" 			 displayName="Damage Multiplier - Player Signs"								displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="PDamC" 			 displayName="Damage Multiplier - Player Crossbow"							displayType="SLIDER;0.1;20.0;199" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="HumDam" 		 	 displayName="Damage Multiplier - Humans"									displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="MonDam" 		 	 displayName="Damage Multiplier - Monsters"									displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="CMonDam" 		 	 displayName="Damage Multiplier - Contract Beasts"							displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="BDam" 		 	 	 displayName="Damage Multiplier - Bosses"									displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="PDOT" 		 	 	 displayName="Damage Multiplier - Player DoT"								displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+			<Var id="EDOT" 		 	 	 displayName="Damage Multiplier - Enemy DoT"								displayType="SLIDER;0.1;10.0;99" 		tags="customNames;nonLocalized;customDisplayName" />
+		   
+		</VisibleVars>
+    </Group>
+</UserConfig>

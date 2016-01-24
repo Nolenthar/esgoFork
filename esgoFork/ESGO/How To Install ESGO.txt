@@ -1,0 +1,33 @@
+I. ESGO Stand Alone.
+
+If you want to use ESGO as Standalone (meaning, with no other supported mods), simply copy modEsgo to your %Witcher 3%\mods as you would any other mod.
+
+Once done, go your newly created modEsgo folder and copy the folder bin to %Witcher 3%. Overwrite when prompted.
+
+Launch the game, go in ESGO Menu, and set all the options. Use the preset for the options you're not interested about.
+
+II. Esgo Compatibility Version
+
+ESGO contains compatibility folder for several mods
+- Better Combat Evolved 2
+- Absolute Camera
+- Friendly HUD
+
+If you're using one of this mod, make sure the other mod is installed before. In the ESGO archive, go to compatibilityVersion, chose your version, and copy the folder mod0esgoCompatibilityFiles to your %Witcher 3%\mods folder. 
+
+This folder contains the conflicting scripts pre-merged. Never merge between mods I support.
+
+If you need to merge, for other reasons (and other mods), make sure you merge prioritarily the mod0esgoCompatibilityFiles folder, not modESGO one, unless no mod0esgoCompatibilityFiles option is given for the merge.
+
+Overall, merging is tedious, and if you don't want my pre supported mods, or want others, you're pretty much on your own. In some occasions, it's simply easier to take ESGO standalone and fix the conflicts from here. The Pre Merged Files are useful if you don't need to merge, they often goes in the way in other circumstances.
+
+If you use only the mods listed above, and my compatibility files, you'll not get any conflict. If you do, you did something wrong.
+
+III. Reinstalling ESGO
+
+If you have ESGO already, and that's true for pretty much any update, I strongly suggest you always reinstall the mod like you never had it. So delete modESGO from your mod folder, overwrite the bin folder again (or just esgo.xml if you know what you're doing). Otheriwse, you may miss option I've added.
+
+IV. Nexus Mod Manager
+
+I do not use Nexus Mod Manager, nor would I know if this works with Esgo. I really suggest not to use it with my compatibility version though.
+
