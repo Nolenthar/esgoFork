@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<UserConfig>
+   
+    <Group id="fhudHUD" displayName="Mods.friendly_hud.fhud_hud">
+        <VisibleVars>
+			<Var id="fhudEnableCombatModules" displayName="fhud_enableCombatModules" displayType="TOGGLE"/>
+			<Var id="fhudEnableCombatModulesOnUnsheathe" displayName="fhud_enableCombatModulesOnUnsheathe" displayType="TOGGLE"/>
+			<Var id="fhudEnableWolfModuleOnVitalityChanged" displayName="fhud_enableWolfModuleOnVitalityChanged" displayType="TOGGLE"/>
+			<Var id="fhudEnableWitcherSensesModules" displayName="fhud_enableWitcherSensesModules" displayType="TOGGLE"/>
+			<Var id="fhudEnableMeditationModules" displayName="fhud_enableMeditationModules" displayType="TOGGLE"/>
+			<Var id="fhudEnableRadialMenuModules" displayName="fhud_enableRadialMenuModules" displayType="TOGGLE"/>
+            <Var id="fhudFadeOutTimeSeconds" displayName="fhud_fadeOutTimeSeconds" displayType="SLIDER;0;10;100"/>
+        </VisibleVars>
+    </Group>
+	
+    <Group id="fhudMarkers" displayName="Mods.friendly_hud.fhud_markers">
+        <VisibleVars>
+			<Var id="fhudQuestMarkersEnabled" displayName="fhud_questMarkersEnabled" displayType="TOGGLE"/>
+			<Var id="fhudCompassMarkersEnabled" displayName="fhud_compassMarkersEnabled" displayType="TOGGLE"/>
+			<Var id="fhudDirectionMarkersAlwaysVisible" displayName="fhud_directionMarkersAlwaysVisible" displayType="TOGGLE"/>
+			<Var id="fhudProject3DMarkersOnCompass" displayName="fhud_project3DMarkersOnCompass" displayType="TOGGLE"/>
+			<Var id="fhudCompassMarkersTop" displayName="fhud_compassMarkersTop" displayType="TOGGLE"/>
+			<Var id="fhudDoNotShowDistance" displayName="fhud_doNotShowDistance" displayType="TOGGLE"/>
+			<Var id="fhudImmersive3DMarker" displayName="fhud_immersive3DMarker" displayType="TOGGLE"/>
+        </VisibleVars>
+    </Group>
+	
+    <Group id="fhudQuickItems" displayName="Mods.friendly_hud.fhud_quick_items">
+        <VisibleVars>
+			<Var id="fhudEnableItemsInRadialMenu" displayName="fhud_enableItemsInRadialMenu" displayType="TOGGLE"/>
+            <Var id="Virtual_fhudDefaultDisplayMode" displayName="fhud_defaultDisplayMode" displayType="OPTIONS" >
+				<OptionsArray>
+					<Option id="0" displayName="fhud_displayMode_potions">
+						<Entry varId="fhudDefaultDisplayMode" value="0"/>
+					</Option>
+					<Option id="1" displayName="fhud_displayMode_bombs">
+						<Entry varId="fhudDefaultDisplayMode" value="1"/>
+					</Option>
+					<Option id="2" displayName="fhud_displayMode_oils">
+						<Entry varId="fhudDefaultDisplayMode" value="2"/>
+					</Option>
+					<Option id="3" displayName="fhud_displayMode_buffs">
+						<Entry varId="fhudDefaultDisplayMode" value="3"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="fhudCycleThroughBuffs" displayName="fhud_cycleThroughBuffs" displayType="TOGGLE"/>
+			<Var id="fhudEnableWASD" displayName="fhud_enableWASD" displayType="TOGGLE"/>
+			<Var id="fhudApplyOilToDrawnSword" displayName="fhud_applyOilToDrawnSword" displayType="TOGGLE"/>
+			<Var id="fhudAllowOilsInCombat" displayName="fhud_allowOilsInCombat" displayType="TOGGLE"/>
+            <Var id="fhudRadialMenuTimescale" displayName="fhud_radialMenuTimescale" displayType="SLIDER;0;1;100"/>
+        </VisibleVars>
+    </Group>
+	
+    <Group id="fhudMeditation" displayName="Mods.friendly_hud.fhud_meditation">
+        <VisibleVars>
+			<Var id="fhudFullHealthRegenAnyDifficulty" displayName="fhud_fullHealthRegenAnyDifficulty" displayType="TOGGLE"/>
+			<Var id="fhudRefillPotionsWhileMeditating" displayName="fhud_refillPotionsWhileMeditating" displayType="TOGGLE"/>
+			<Var id="fhudResetRefillSettingToDefaultAfterMeditation" displayName="fhud_resetRefillSettingToDefaultAfterMeditation" displayType="TOGGLE"/>
+        </VisibleVars>
+    </Group>
+	
+    <Group id="fhudMap" displayName="Mods.friendly_hud.fhud_map">
+        <VisibleVars>
+			<Var id="fhudMapUnlimitedZoom" displayName="fhud_mapUnlimitedZoom" displayType="TOGGLE"/>
+            <Var id="fhudMapZoomMinCoef" displayName="fhud_mapZoomMinCoef" displayType="SLIDER;0;5;500"/>
+            <Var id="fhudMapZoomMaxCoef" displayName="fhud_mapZoomMaxCoef" displayType="SLIDER;0;5;500"/>
+            <Var id="fhudMinimapZoomExterior" displayName="fhud_minimapZoomExterior" displayType="SLIDER;0;5;500"/>
+            <Var id="fhudMinimapZoomInterior" displayName="fhud_minimapZoomInterior" displayType="SLIDER;0;5;500"/>
+            <Var id="fhudMinimapZoomBoat" displayName="fhud_minimapZoomBoat" displayType="SLIDER;0;5;500"/>
+        </VisibleVars>
+    </Group>
+	
+    <Group id="fhudMenus" displayName="Mods.friendly_hud.fhud_menus">
+        <VisibleVars>
+			<Var id="fhudShowTrackedQuest" displayName="fhud_showTrackedQuest" displayType="TOGGLE"/>
+			<Var id="fhudBlockInventoryInCombat" displayName="fhud_blockInventoryInCombat" displayType="TOGGLE"/>
+			<Var id="fhudPotionsTabOpensByDefault" displayName="fhud_potionsTabOpensByDefault" displayType="TOGGLE"/>
+			<Var id="fhudNewPotionsTabSorting" displayName="fhud_newPotionsTabSorting" displayType="TOGGLE"/>
+			<Var id="fhudEnableResetNewItems" displayName="fhud_enableResetNewItems" displayType="TOGGLE"/>
+        </VisibleVars>
+    </Group>
+	
+    <Group id="fhudInteractions" displayName="Mods.friendly_hud.fhud_interactions">
+        <VisibleVars>
+			<Var id="fhudShowTalkBubble" displayName="fhud_showTalkBubble" displayType="TOGGLE"/>
+			<Var id="fhudShowTalkBubbleText" displayName="fhud_showTalkBubbleText" displayType="TOGGLE"/>
+			<Var id="fhudShowTalkButton" displayName="fhud_showTalkButton" displayType="TOGGLE"/>
+			<Var id="fhudShowTalkButtonText" displayName="fhud_showTalkButtonText" displayType="TOGGLE"/>
+			<Var id="fhudDisableAllInteractionPrompts" displayName="fhud_disableAllInteractionPrompts" displayType="TOGGLE"/>
+			<Var id="fhudEnableNPCQuestMarkers" displayName="fhud_enableNPCQuestMarkers" displayType="TOGGLE"/>
+        </VisibleVars>
+    </Group>
+	
+    <Group id="fhudMisc" displayName="Mods.friendly_hud.fhud_misc">
+        <VisibleVars>
+			<Var id="fhudDoNotShowDamage" displayName="fhud_doNotShowDamage" displayType="TOGGLE"/>
+			<Var id="fhudDoNotShowLevels" displayName="fhud_doNotShowLevels" displayType="TOGGLE"/>
+			<Var id="fhudDontTouchMySwords" displayName="fhud_dontTouchMySwords" displayType="TOGGLE"/>
+			<Var id="fhudShowQuenDuration" displayName="fhud_showQuenDuration" displayType="TOGGLE"/>
+        </VisibleVars>
+    </Group>
+	
+</UserConfig>

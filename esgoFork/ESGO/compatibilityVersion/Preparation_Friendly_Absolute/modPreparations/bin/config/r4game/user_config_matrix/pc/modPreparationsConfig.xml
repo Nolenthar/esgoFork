@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<UserConfig>
+   
+    <Group id="preparationsMeditation" displayName="Mods.mod_preparations.prep_meditation">
+        <VisibleVars>
+			<Var id="prepAllowCampFire" displayName="prep_allowCampFire" displayType="TOGGLE"/>
+			<Var id="prepAllowFireSource" displayName="prep_allowFireSource" displayType="TOGGLE"/>
+			<Var id="prepAllowLightSource" displayName="prep_allowLightSource" displayType="TOGGLE"/>
+			<Var id="prepDisallowInterior" displayName="prep_disallowInterior" displayType="TOGGLE"/>
+			<Var id="prepDisallowSettlement" displayName="prep_disallowSettlement" displayType="TOGGLE"/>
+			<Var id="prepDisallowNPCs" displayName="prep_disallowNPCs" displayType="TOGGLE"/>
+            <Var id="prepNpcDistance" displayName="prep_npcDistance" displayType="SLIDER;0;100;100"/>
+			<Var id="prepAllowCampFireInInterior" displayName="prep_allowCampFireInInterior" displayType="TOGGLE"/>
+            <Var id="prepTimberAmount" displayName="prep_timberAmount" displayType="SLIDER;0;10;10"/>
+            <Var id="prepHardTimberAmount" displayName="prep_hardTimberAmount" displayType="SLIDER;0;10;10"/>
+			<Var id="prepDisallowCampFire" displayName="prep_disallowCampFire" displayType="TOGGLE"/>
+        </VisibleVars>
+    </Group>
+
+    <Group id="preparationsActions" displayName="Mods.mod_preparations.prep_actions">
+        <VisibleVars>
+			<Var id="prepDisallowAlchemy" displayName="prep_disallowAlchemy" displayType="TOGGLE"/>
+			<Var id="prepDisallowRepair" displayName="prep_disallowRepair" displayType="TOGGLE"/>
+			<Var id="prepDisallowUpgrade" displayName="prep_disallowUpgrade" displayType="TOGGLE"/>
+			<Var id="prepDisallowBuySkill" displayName="prep_disallowBuySkill" displayType="TOGGLE"/>
+			<Var id="prepDisallowEquipSkill" displayName="prep_disallowEquipSkill" displayType="TOGGLE"/>
+			<Var id="prepDisallowEquipMutagen" displayName="prep_disallowEquipMutagen" displayType="TOGGLE"/>
+        </VisibleVars>
+    </Group>
+
+    <Group id="preparationsTime" displayName="Mods.mod_preparations.prep_time">
+        <VisibleVars>
+            <Var id="prepTimeToCreateItemMins" displayName="prep_timeToCreateItemMins" displayType="SLIDER;0;720;720"/>
+            <Var id="prepTimeToRepairItemMins" displayName="prep_timeToRepairItemMins" displayType="SLIDER;0;720;720"/>
+            <Var id="prepTimeToUpgradeItemMins" displayName="prep_timeToUpgradeItemMins" displayType="SLIDER;0;720;720"/>
+            <Var id="prepTimeToBuySkillMins" displayName="prep_timeToBuySkillMins" displayType="SLIDER;0;720;720"/>
+            <Var id="prepTimeToEquipSkillMins" displayName="prep_timeToEquipSkillMins" displayType="SLIDER;0;720;720"/>
+            <Var id="prepTimeToEquipMutagenMins" displayName="prep_timeToEquipMutagenMins" displayType="SLIDER;0;720;720"/>
+        </VisibleVars>
+    </Group>
+	
+    <Group id="preparationsMisc" displayName="Mods.mod_preparations.prep_misc">
+        <VisibleVars>
+            <Var id="prepMaxOilCharges" displayName="prep_maxOilCharges" displayType="SLIDER;0;100;100"/>
+			<Var id="prepOneBaseForRefill" displayName="prep_oneBaseForRefill" displayType="TOGGLE"/>
+            <Var id="Virtual_prepBombsRefillBase" displayName="prep_bombsRefillBase" displayType="OPTIONS" >
+				<OptionsArray>
+					<Option id="0" displayName="prep_refillBase_Saltpetre">
+						<Entry varId="prepBombsRefillBase" value="0"/>
+					</Option>
+					<Option id="1" displayName="prep_refillBase_Stammelfords_dust">
+						<Entry varId="prepBombsRefillBase" value="1"/>
+					</Option>
+					<Option id="2" displayName="prep_refillBase_Alchemists_powder">
+						<Entry varId="prepBombsRefillBase" value="2"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+            <Var id="Virtual_prepOilsRefillBase" displayName="prep_oilsRefillBase" displayType="OPTIONS" >
+				<OptionsArray>
+					<Option id="0" displayName="prep_refillBase_Dog_tallow">
+						<Entry varId="prepOilsRefillBase" value="0"/>
+					</Option>
+					<Option id="1" displayName="prep_refillBase_Bear_fat">
+						<Entry varId="prepOilsRefillBase" value="1"/>
+					</Option>
+					<Option id="2" displayName="prep_refillBase_Alchemical_paste">
+						<Entry varId="prepOilsRefillBase" value="2"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+            <Var id="Virtual_prepMutagensRefillBase" displayName="prep_mutagensRefillBase" displayType="OPTIONS" >
+				<OptionsArray>
+					<Option id="0" displayName="prep_refillBase_Dwarven_spirit">
+						<Entry varId="prepMutagensRefillBase" value="0"/>
+					</Option>
+					<Option id="1" displayName="prep_refillBase_Alcohest">
+						<Entry varId="prepMutagensRefillBase" value="1"/>
+					</Option>
+					<Option id="2" displayName="prep_refillBase_White_Gull">
+						<Entry varId="prepMutagensRefillBase" value="2"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+            <Var id="Virtual_prepPotionsRefillBase" displayName="prep_potionsRefillBase" displayType="OPTIONS" >
+				<OptionsArray>
+					<Option id="0" displayName="prep_refillBase_Dwarven_spirit">
+						<Entry varId="prepPotionsRefillBase" value="0"/>
+					</Option>
+					<Option id="1" displayName="prep_refillBase_Alcohest">
+						<Entry varId="prepPotionsRefillBase" value="1"/>
+					</Option>
+					<Option id="2" displayName="prep_refillBase_White_Gull">
+						<Entry varId="prepPotionsRefillBase" value="2"/>
+					</Option>
+				</OptionsArray>
+			</Var>
+			<Var id="prepFullRecipeForRefill" displayName="prep_fullRecipeForRefill" displayType="TOGGLE"/>
+        </VisibleVars>
+    </Group>
+	
+</UserConfig>

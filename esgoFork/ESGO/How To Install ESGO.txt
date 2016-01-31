@@ -2,7 +2,7 @@ I. ESGO Stand Alone.
 
 If you want to use ESGO as Standalone (meaning, with no other supported mods), simply copy modEsgo to your %Witcher 3%\mods as you would any other mod.
 
-Once done, go your newly created modEsgo folder and copy the folder bin to %Witcher 3%. Overwrite when prompted.
+Once done, go your newly created modEsgo folder and copy the folder bin to %Witcher 3%. Overwrite when prompted. Do this for any new version.
 
 Launch the game, go in ESGO Menu, and set all the options. Use the preset for the options you're not interested about.
 
@@ -12,8 +12,9 @@ ESGO contains compatibility folder for several mods
 - Better Combat Evolved 2
 - Absolute Camera
 - Friendly HUD
+- AMM
 
-If you're using one of this mod, make sure the other mod is installed before. In the ESGO archive, go to compatibilityVersion, chose your version, and copy the folder mod0esgoCompatibilityFiles to your %Witcher 3%\mods folder. 
+If you're using one of this mod, make sure the other mod is installed before. In the ESGO archive, go to compatibilityVersion, chose your version, and copy the folder mod0esgoCompatibilityFiles to your %Witcher 3%\mods folder. Be aware Nexus Mod Manager may fail to install properly, so make sure you install manually if you notice any issue such as missing menus, scripts not compiling, etc.
 
 This folder contains the conflicting scripts pre-merged. Never merge between mods I support.
 

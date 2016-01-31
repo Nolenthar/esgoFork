@@ -1,0 +1,6 @@
+
+[Exploration]
+IK_Space=(Action=MeditationFastForward)
+IK_Pad_RightThumb=(Action=PanelMeditation,State=Duration,IdleTime=0.5)
+IK_Pad_LeftThumb=(Action=MeditationFastForward)
+
